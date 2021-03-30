@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Продукт</title>  
+  <link rel="stylesheet" href="css/select2.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+  <div class="wrapper">    
+    @@include('var/_top-s.html')
+    <div class="prod-page">
+      <div class="contain">
+        <div class="bread">
+          <div class="contain">
+            <div class="bread-w">
+              <ul class="bread-ul">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Производители</a></li>
+                <li><a href="#">Авто</a></li>
+                <li><span>Автотовары</span></li>
+              </ul>
+            </div>
+          </div>
+        </div><!--bread-->
+        <div class="comp-card comp-card-top">
+          <a href="#" class="comp-card-img"><img src="img/comp-1.png"></a>
+          <div class="manufacturers-card-info">
+            <div class="manufacturers-card-info-row">
+              <div class="manufacturers-card-info-col-1">
+                <div class="head-1">Интеграл плюс
+                  <span class="manufacturers-card-info-a-1-span"></span>
+                </div>
+                <a href="#" class="comp-card-info-a-geo">Татарстан, Казань</a>
+                <div class="comp-card-info-txt">Производство и разработка упаковочного оборудования</div>
+              </div>
+              <div class="comp-card-info-col-2"><a href="#" class="comp-butt butt">Заказать продукцию</a><a href="#" class="comp-card-info-col-2-btn"></a><a href="#" class="comp-err-link">Сообщить об ошибке</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="columns prod-cols">
+          <div class="column-l">
+            <div class="product-row-txt">
+              <h1>Защитная маска</h1>
+              <div class="product-txt-w">
+                <div class="product-txt-2">от 155 ₽</div>
+                <div class="product-txt-3">(От 1 000 шт.)</div>
+              </div>
+            </div>
+            <div class="product-photo-w">
+              <a href="#" class="product-photo-a">
+                <span class="product-photo-span"><img src="img/mask.png" /></span>
+              </a>
+              <div class="product-photo-row">
+                <a href="#" class="product-photo-mini"><img src="img/mask-2.png" /></a><a href="#" class="product-photo-mini"><img src="img/mask-2.png" /></a><a href="#" class="product-photo-mini"><img src="img/mask-2.png" /></a>
+              </div>
+            </div>
+            <div class="product-descript">
+              <div class="product-descript-row">
+                <div class="product-descript-txt">Тип</div>
+                <div class="product-descript-txt">Маска</div>
+              </div>
+              <div class="product-descript-row">
+                <div class="product-descript-txt">Применение</div>
+                <div class="product-descript-txt">Защитная маска</div>
+              </div>
+              <div class="product-descript-row">
+                <div class="product-descript-txt">Наличие мембраны</div>
+                <div class="product-descript-txt">Без мембраны</div>
+              </div>
+              <div class="product-descript-row">
+                <div class="product-descript-txt">Перепад</div>
+                <div class="product-descript-txt">10 мм</div>
+              </div>
+            </div>
+            <div class="product-desc">Трехслойная одноразовая маска на резинках с носовым фиксатором. Данная продукция изготовлена из высококачественного синтетического нетканого материала.</div>
+
+            <div class="category-wh">
+              <div class="category-w">
+                <div class="category-bott-txt">Категории</div>
+                <div class="category-bott-items">
+                  <ul class="category-bott-ul">
+                    <li class="category-bott-li"><a class="category-bott-a">Одежда</a></li>
+                    <li class="category-bott-li"><a class="category-bott-a">Обувь</a></li>
+                    <li class="category-bott-li"><a class="category-bott-a">Аксессуары</a></li>                    
+                  </ul>
+                  <ul class="category-bott-ul">
+                    <li class="category-bott-li"><a class="category-bott-a">Мужская одежда</a></li>
+                    <li class="category-bott-li"><a class="category-bott-a">Мужская повседневная одежда</a></li>                    
+                  </ul>
+                </div>
+              </div>              
+            </div>
+            <div class="divider"></div>           
+            <div class="brevs">
+              <div class="head">Отзывы</div>
+              @@include('var/_brews-w.html')
+              <div class="addbrevs">
+                <div class="head-2">Оставить отзыв</div>
+
+                @@include('var/_addbrevs-form.html')                
+              </div>
+            </div><!--brevs-->
+
+
+
+            <div class="product-similar">
+              <div class="head-2">Похожие товары</div>
+              <div class="product-similar-w">
+                <a href="#" class="product-similar-img-w"><img src="img/similar.jpg" /></a>
+                <div class="product-similar-about">
+                  <div class="product-similar-row">
+                    <div class="product-similar-txt-2">Маска для лица IKSELAS — на 120 процедур</div>
+                    <div class="product-similar-heart-w"><a href="#" class="manufacturers-card-info-col-2-btn"></a></div>
+                  </div>
+                  <a href="#" class="product-similar-a">Ikselas</a>
+                  <div class="product-similar-txt-3">Подтягивает контур лица, выравнивает цвет кожи.</div>
+                </div>
+              </div>                        
+              <div class="product-similar-w">
+                <a href="#" class="manufacturers-card-img"><img src="img/Image.png" /></a>
+                <div class="product-similar-about">
+                  <div class="product-similar-row">
+                    <div class="product-similar-txt-2">Маска для лица IKSELAS — на 120 процедур</div>
+                    <div class="product-similar-heart-w"><a href="#" class="manufacturers-card-info-col-2-btn"></a></div>
+                  </div>
+                  <a href="#" class="product-similar-a">Ikselas</a>
+                  <div class="product-similar-price">
+                    <div class="product-similar-price-txt-1">5 ₽</div>
+                    <div class="product-similar-price-txt-2">(от 50 000 шт.)</div>
+                  </div>
+                  <div class="product-similar-txt-3">Подтягивает контур лица, выравнивает цвет кожи, убирает пигментные пятна на коже...</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column-r">
+            <div class="rconts">
+              <div class="head-2-r">Контакты компании</div>
+              <ul class="rconts-ul">
+                <li class="rconts-li">
+                  <span class="rconts-span">Телефон:</span>
+                  <span href="#" class="rconts-a">
+                    <a href="#">8 (800) 777 66 55</a>
+                  </span>
+                </li>
+                <li class="rconts-li">
+                  <span class="rconts-span">Почта:</span>
+                  <span href="#" class="rconts-a">
+                    <a href="#">markshmark@gmail.com</a>
+                  </span>
+                </li>
+                <li class="rconts-li">
+                  <span class="rconts-span">Веб-сайт:</span>
+                  <span class="rconts-a"><a href="#">www.intmailert.ru</a></span>
+                </li></ul>
+                <a href="#" class="butt-bl-w100 butt">Отправить сообщение</a><a href="#" class="butt-wh-w100 butt-w">Запросить прайс-лист</a>
+              </div>
+            </div><!--column-r-->
+          </div><!--cols-->
+
+        </div><!--cont-->
+      </div><!--page-->
+
+      @@include('var/_footer.html')
+    </div><!--wrapper-->
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/common.js"></script>
+  </body>
+  </html>
+

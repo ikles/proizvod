@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Категории закупок</title>  
+  <link rel="stylesheet" href="css/select2.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+  <div class="wrapper">    
+    @@include('var/_top-s.html')
+    <div class="catpurch-page">
+      <div class="contain">
+        <div class="bread">
+          <div class="contain">
+            <div class="bread-w">
+              <ul class="bread-ul">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Производители</a></li>
+                <li><a href="#">Авто</a></li>
+                <li><span>Автотовары</span></li>
+              </ul>
+            </div>
+          </div>
+        </div><!--bread-->
+      </div><!--cont-->
+
+      <div class="procur-categ">
+        <div class="contain">
+          <div class="procur-categ-w">
+            <div class="columns">
+              <div class="column-l">
+                <div class="procur-categ-colums-w">
+                  <div class="procur-categ-choices">
+                    <div class="head-2">Оптовые закупки</div>
+                    <div class="procur-categ-choices-row">
+                      <div class="procur-categ-choices-it-1">
+                        <div class="procur-categ-choices-txt-1">Поиск по названию:</div>
+                        <input class="procur-categ-choices-input" type="text" placeholder="Найти" />
+                      </div>
+                      <div class="manufacturers-cond-iprocur-categ-choices-it-2tem-3">
+                        <div class="procur-categ-choices-txt-1">Сортировка:</div>
+                        <div class="procur-categ-choices-txt-2">Не выбрано<span class="procur-categ-choices-span-1"></span></div>
+                      </div>
+                      <div class="procur-categ-choices-it-3">
+                        <div class="procur-categ-choices-txt-1">Тип закупок:</div>
+                        <div class="procur-categ-choices-txt-2">Мелки опт<span class="procur-categ-choices-span-1"></span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="procur-categ-card">
+                    <a class="product-similar-img-w"><img src="img/wholes-1.jpg" /></a>
+                    <div class="procur-categ-info">
+                      <div class="product-similar-row">
+                        <div class="product-similar-txt-2">Женское нижнее белье и интимные товары</div>
+                        <div class="product-similar-heart-w"><a class="manufacturers-card-info-col-2-btn"></a></div>
+                      </div>
+                      <div class="nbuy-txt-row">
+                        <div class="nbuy-txt-2-w">
+                          <div class="nbuy-txt-2">
+                            Санкт-Петербург, Россия
+                          </div>
+                        </div>
+                        <div class="nbuy-txt-1-w"><div class="nbuy-txt-1">10.03.2021</div></div>
+                      </div>
+                      <div class="purchases-wholes-choice">
+                        <div class="purchases-columns-charact-txt">Тип: <span class="purchases-columns-charact-span">мелкий опт </span></div>
+                        <div class="purchases-columns-charact-txt">Объем: <span class="purchases-columns-charact-span">500 шт.</span></div>
+                        <div class="purchases-columns-charact-txt">Бюджет: <span class="purchases-columns-charact-span">80 000 ₽</span></div>
+                      </div>
+                      <div class="product-similar-txt-3">Закупки каждый месяц.</div>
+                    </div>
+                  </div>
+                  <div class="procur-categ-card">
+                    <a class="product-similar-img-w"><img src="img/wholes-2.jpg" /></a>
+                    <div class="procur-categ-info">
+                      <div class="product-similar-row">
+                        <div class="product-similar-txt-2">Женское нижнее белье и интимные товары</div>
+                        <div class="product-similar-heart-w"><a class="manufacturers-card-info-col-2-btn"></a></div>
+                      </div>
+                      <div class="nbuy-txt-row">
+                        <div class="nbuy-txt-2-w">
+                          <div class="nbuy-txt-2">
+                            Санкт-Петербург, Россия
+                          </div>
+                        </div>
+                        <div class="nbuy-txt-1-w"><div class="nbuy-txt-1">10.03.2021</div></div>
+                      </div>
+                      <div class="purchases-wholes-choice">
+                        <div class="purchases-columns-charact-txt">Тип: <span class="purchases-columns-charact-span">мелкий опт </span></div>
+                        <div class="purchases-columns-charact-txt">Объем: <span class="purchases-columns-charact-span">500 шт.</span></div>
+                      </div>
+                      <div class="product-similar-txt-3">Закупки каждый месяц.</div>
+                    </div>
+                  </div>
+                  <div class="procur-categ-card">
+                    <a class="product-similar-img-w"><img src="img/Image.png" /></a>
+                    <div class="procur-categ-info">
+                      <div class="product-similar-row">
+                        <div class="product-similar-txt-2">Женское нижнее белье и интимные товары</div>
+                        <div class="product-similar-heart-w"><a class="manufacturers-card-info-col-2-btn"></a></div>
+                      </div>
+                      <div class="nbuy-txt-row">
+                        <div class="nbuy-txt-2-w">
+                          <div class="nbuy-txt-2">
+                            Санкт-Петербург, Россия
+                          </div>
+                        </div>
+                        <div class="nbuy-txt-1-w"><div class="nbuy-txt-1">10.03.2021</div></div>
+                      </div>
+                      <div class="purchases-wholes-choice">
+                        <div class="purchases-columns-charact-txt">Тип: <span class="purchases-columns-charact-span">мелкий опт </span></div>
+                        <div class="purchases-columns-charact-txt">Объем: <span class="purchases-columns-charact-span">500 шт.</span></div>
+                      </div>
+                      <div class="product-similar-txt-3">Закупки каждый месяц.</div>
+                    </div>
+                  </div>
+                  <div class="procur-categ-card">
+                    <a class="product-similar-img-w"><img src="img/wholes-3.jpg" /></a>
+                    <div class="procur-categ-info">
+                      <div class="product-similar-row">
+                        <div class="product-similar-txt-2">Женское нижнее белье и интимные товары</div>
+                        <div class="product-similar-heart-w"><a class="manufacturers-card-info-col-2-btn"></a></div>
+                      </div>
+                      <div class="nbuy-txt-row">
+                        <div class="nbuy-txt-2-w">
+                          <div class="nbuy-txt-2">
+                            Санкт-Петербург, Россия
+                          </div>
+                        </div>
+                        <div class="nbuy-txt-1-w"><div class="nbuy-txt-1">10.03.2021</div></div>
+                      </div>
+                      <div class="purchases-wholes-choice">
+                        <div class="purchases-columns-charact-txt">Тип: <span class="purchases-columns-charact-span">мелкий опт </span></div>
+                      </div>
+                      <div class="product-similar-txt-3">Ищем постоянного надежного поставщика перчаток смотровых и хирургических нитриловых, перчаток...</div>
+                    </div>
+                  </div>
+                  <div class="procur-categ-card">
+                    <a class="product-similar-img-w"><img src="img/Image.png" /></a>
+                    <div class="procur-categ-info">
+                      <div class="product-similar-row">
+                        <div class="product-similar-txt-2">Женское нижнее белье и интимные товары</div>
+                        <div class="product-similar-heart-w"><a class="manufacturers-card-info-col-2-btn"></a></div>
+                      </div>
+                      <div class="nbuy-txt-row">
+                        <div class="nbuy-txt-2-w">
+                          <div class="nbuy-txt-2">
+                            Санкт-Петербург, Россия
+                          </div>
+                        </div>
+                        <div class="nbuy-txt-1-w"><div class="nbuy-txt-1">10.03.2021</div></div>
+                      </div>
+                      <div class="purchases-wholes-choice">
+                        <div class="purchases-columns-charact-txt">Тип: <span class="purchases-columns-charact-span">мелкий опт </span></div>
+                        <div class="purchases-columns-charact-txt">Объем: <span class="purchases-columns-charact-span">500 шт.</span></div>
+                        <div class="purchases-columns-charact-txt">Бюджет: <span class="purchases-columns-charact-span">80 000 ₽</span></div>
+                      </div>
+                      <div class="product-similar-txt-3">Закупки каждый месяц.</div>
+                    </div>
+                  </div>
+                  <div class="procur-categ-card">
+                    <a class="product-similar-img-w"><img src="img/wholes-4.jpg" /></a>
+                    <div class="procur-categ-info">
+                      <div class="product-similar-row">
+                        <div class="product-similar-txt-2">Женское нижнее белье и интимные товары</div>
+                        <div class="product-similar-heart-w"><a class="manufacturers-card-info-col-2-btn"></a></div>
+                      </div>
+                      <div class="nbuy-txt-row">
+                        <div class="nbuy-txt-2-w">
+                          <div class="nbuy-txt-2">
+                            Санкт-Петербург, Россия
+                          </div>
+                        </div>
+                        <div class="nbuy-txt-1-w"><div class="nbuy-txt-1">10.03.2021</div></div>
+                      </div>
+                      <div class="purchases-wholes-choice">
+                        <div class="purchases-columns-charact-txt">Тип: <span class="purchases-columns-charact-span">мелкий опт </span></div>
+                        <div class="purchases-columns-charact-txt">Объем: <span class="purchases-columns-charact-span">500 шт.</span></div>
+                      </div>
+                      <div class="product-similar-txt-3">Закупки каждый месяц.</div>
+                    </div>
+                  </div>
+                  <div class="procur-categ-card">
+                    <a class="product-similar-img-w"><img src="img/Image.png" /></a>
+                    <div class="procur-categ-info">
+                      <div class="product-similar-row">
+                        <div class="product-similar-txt-2">Женское нижнее белье и интимные товары</div>
+                        <div class="product-similar-heart-w"><a class="manufacturers-card-info-col-2-btn"></a></div>
+                      </div>
+                      <div class="nbuy-txt-row">
+                        <div class="nbuy-txt-2-w">
+                          <div class="nbuy-txt-2">
+                            Санкт-Петербург, Россия
+                          </div>
+                        </div>
+                        <div class="nbuy-txt-1-w"><div class="nbuy-txt-1">10.03.2021</div></div>
+                      </div>
+                      <div class="purchases-wholes-choice">
+                        <div class="purchases-columns-charact-txt">Тип: <span class="purchases-columns-charact-span">мелкий опт </span></div>
+                        <div class="purchases-columns-charact-txt">Бюджет: <span class="purchases-columns-charact-span">80 000 ₽</span></div>
+                      </div>
+                      <div class="product-similar-txt-3">Закупки каждый месяц.</div>
+                    </div>
+                  </div>
+                  <div class="procur-categ-card">
+                    <a class="product-similar-img-w"><img src="img/Image.png" /></a>
+                    <div class="procur-categ-info">
+                      <div class="product-similar-row">
+                        <div class="product-similar-txt-2">Женское нижнее белье и интимные товары</div>
+                        <div class="product-similar-heart-w"><a class="manufacturers-card-info-col-2-btn"></a></div>
+                      </div>
+                      <div class="nbuy-txt-row">
+                        <div class="nbuy-txt-2-w">
+                          <div class="nbuy-txt-2">
+                            Санкт-Петербург, Россия
+                          </div>
+                        </div>
+                        <div class="nbuy-txt-1-w"><div class="nbuy-txt-1">10.03.2021</div></div>
+                      </div>
+                      <div class="purchases-wholes-choice">
+                        <div class="purchases-columns-charact-txt">Тип: <span class="purchases-columns-charact-span">мелкий опт </span></div>
+                      </div>
+                      <div class="product-similar-txt-3">Закупки каждый месяц.</div>
+                    </div>
+                  </div>
+                  <div class="procur-categ-card">
+                    <a class="product-similar-img-w"><img src="img/wholes-5.jpg" /></a>
+                    <div class="procur-categ-info">
+                      <div class="product-similar-row">
+                        <div class="product-similar-txt-2">Женское нижнее белье и интимные товары</div>
+                        <div class="product-similar-heart-w"><a class="manufacturers-card-info-col-2-btn"></a></div>
+                      </div>
+                      <div class="nbuy-txt-row">
+                        <div class="nbuy-txt-2-w">
+                          <div class="nbuy-txt-2">
+                            Санкт-Петербург, Россия
+                          </div>
+                        </div>
+                        <div class="nbuy-txt-1-w"><div class="nbuy-txt-1">10.03.2021</div></div>
+                      </div>
+                      <div class="purchases-wholes-choice">
+                        <div class="purchases-columns-charact-txt">Тип: <span class="purchases-columns-charact-span">мелкий опт </span></div>
+                        <div class="purchases-columns-charact-txt">Объем: <span class="purchases-columns-charact-span">500 шт.</span></div>
+                      </div>
+                      <div class="product-similar-txt-3">Закупки каждый месяц.</div>
+                    </div>
+                  </div>
+                  <div class="procur-categ-card">
+                    <a class="product-similar-img-w"><img src="img/Image.png" /></a>
+                    <div class="procur-categ-info">
+                      <div class="product-similar-row">
+                        <div class="product-similar-txt-2">Женское нижнее белье и интимные товары</div>
+                        <div class="product-similar-heart-w"><a class="manufacturers-card-info-col-2-btn"></a></div>
+                      </div>
+                      <div class="nbuy-txt-row">
+                        <div class="nbuy-txt-2-w">
+                          <div class="nbuy-txt-2">
+                            Санкт-Петербург, Россия
+                          </div>
+                        </div>
+                        <div class="nbuy-txt-1-w"><div class="nbuy-txt-1">10.03.2021</div></div>
+                      </div>
+                      <div class="purchases-wholes-choice">
+                        <div class="purchases-columns-charact-txt">Тип: <span class="purchases-columns-charact-span">мелкий опт </span></div>
+                        <div class="purchases-columns-charact-txt">Бюджет: <span class="purchases-columns-charact-span">80 000 ₽</span></div>
+                      </div>
+                      <div class="product-similar-txt-3">Закупки каждый месяц.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column-r">
+                <div class="procur-categ-r">
+                  <a class="procur-categ-btn">Показать</a>
+                  <div class="manufacturers-categor">
+                    <div class="manufacturers-select-txt">Категории</div>
+                    <ul class="manufacturers-categor-ul">
+                      <li class="manufacturers-categor-li">
+                        <a class="manufacturers-categor-a">Мебель</a>
+                        <ul class="procur-categ-ul">
+                          <li class="procur-categ-li"><a class="procur-categ-a">Мебель для кухни</a></li>
+                          <li class="procur-categ-li"><a class="procur-categ-a">Мебель для кухни</a></li>
+                          <li class="procur-categ-li"><a class="procur-categ-act-a">Мебель для кухни</a></li>
+                        </ul>
+                        <a class="manufacturers-categor-a">Утитилизация</a><a class="manufacturers-categor-a">Бухгалтерия</a><a class="manufacturers-categor-a">Программное обеспечение</a>
+                        <a class="manufacturers-categor-a">Консалтинговые услуги</a><a class="manufacturers-categor-a">Таможенные услуги</a><a class="manufacturers-categor-a">Технологии</a>
+                        <a class="manufacturers-categor-a">Полиграфия</a><a class="manufacturers-categor-a">Прочие услуги</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="manufacturers-adv">
+                    <div class="manufacturers-adv-txt-1">Производителям</div>
+                    <div class="manufacturers-adv-txt-2">В нашем каталоге более 20 000 компаний - производителей. Присоединяйтесь к нам!</div>
+                    <a class="manufacturers-adv-btn">Зарегистрироваться</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div><!--page-->
+
+    @@include('var/_footer.html')
+  </div><!--wrapper-->
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/select2.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/common.js"></script>
+</body>
+</html>
+

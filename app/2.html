@@ -35,7 +35,7 @@
           </div>
         </div>
 
-        <div class="comp-card">
+        <div class="comp-card comp-card-top">
           <a href="#" class="comp-card-img"><img src="img/comp-1.png" /></a>
           <div class="manufacturers-card-info">
             <div class="manufacturers-card-info-row">
@@ -61,9 +61,9 @@
               <li><a href="#">Реквизиты</a></li>
             </ul>
             <div class="abcomp">
-              <div class="head-2">
+              <h2>
                 О компании
-              </div>
+              </h2>
               <div class="abcomp-desc">
                 <p>
                   У нас нет подрядчиков, все работы — от обработки металла до создания плат — выполняются на 3000 м2 наших производственных площадей. Собственные конструкторское бюро, механический и радиомонтажный цехи позволяют
@@ -81,25 +81,12 @@
                 </a>
               </div>
             </div>
-            <div class="compgal">
-              <div class="head-2">Фотогалерея</div>
-              <div class="compgal-w">
-                <a data-fancybox="gallery" href="img/gal-it-1.jpg" class="fancy compgal-it"><img src="img/gal-it-1.jpg" class="compgal-img" /></a>
-                <a data-fancybox="gallery" href="img/gal-it-2.jpg" class="fancy compgal-it"><img src="img/gal-it-2.jpg" class="compgal-img" /></a>
-                <a data-fancybox="gallery" href="img/gal-it-3.jpg" class="fancy compgal-it"><img src="img/gal-it-3.jpg" class="compgal-img" /></a>
-                <a data-fancybox="gallery" href="img/gal-it-4.jpg" class="fancy compgal-it"><img src="img/gal-it-4.jpg" class="compgal-img" /></a>
-                <a data-fancybox="gallery" href="img/gal-it-1.jpg" class="fancy compgal-it"><img src="img/gal-it-1.jpg" class="compgal-img" /></a>
-                <a data-fancybox="gallery" href="img/gal-it-2.jpg" class="fancy compgal-it"><img src="img/gal-it-2.jpg" class="compgal-img" /></a>
-                <a data-fancybox="gallery" href="img/gal-it-3.jpg" class="fancy compgal-it"><img src="img/gal-it-3.jpg" class="compgal-img" /></a>
-                <a data-fancybox="gallery" href="img/gal-it-4.jpg" class="fancy compgal-it"><img src="img/gal-it-4.jpg" class="compgal-img" /></a>
-              </div>
-              <a href="#" class="compgal-more">Показать все фото</a>
-            </div>
+            @@include('var/_compgal.html')
             <div class="productis">
-              <div class="head-2">Продукция</div>
+              <h2>Продукция</h2>
               <div class="productis-nav-w">
                 <ul class="productis-nav">
-                  <li class="productis-nav-li"><a href="#" class="productis-nav-a-act">Выпускаемые товары</a></li>
+                  <li class="productis-nav-li"><a href="#" class="productis-nav-a act">Выпускаемые товары</a></li>
                   <li class="productis-nav-li"><a href="#" class="productis-nav-a">Целлофанатары</a></li>
                   <li class="productis-nav-li"><a href="#" class="productis-nav-a"> Дозаторы</a></li>
                 </ul>
@@ -124,7 +111,7 @@
               <a href="#" class="productis-more">Показать все товары</a>
             </div>
             <div class="pubss">
-              <div class="head-2">Публикации</div>
+              <h2>Публикации</h2>
               <div class="pubss-w">
                 <div class="pubss-it">
                   <div class="pubss-txt-1">10.03.2021</div>
@@ -140,7 +127,7 @@
               <a href="#" class="pubss-more">Показать все публикации</a>
             </div>
             <div class="bconts">
-              <div class="head-2">Контакты</div>
+              <h2>Контакты</h2>
               <div class="bconts-w">
                 <div class="bconts-row">
                   <div class="bconts-col-1">Адрес:</div>
@@ -185,7 +172,7 @@
               </div>
             </div>
             <div class="brequisits">
-              <div class="head-2">Реквизиты</div>
+              <h2>Реквизиты</h2>
               <div class="brequisits-w">
                 <div class="brequisits-row">
                   <div class="brequisits-col-1">Статус:</div>
@@ -215,52 +202,21 @@
               <a href="#" class="brequisits-butt butt">Проверить контрагента</a>
             </div>
             <div class="brevs">
-              <h2>Отзывы</h2>
-              <div class="brevs-w">
-                <div class="brevs-it">
-                  <div class="brevs-inn">
-                    <a href="#" class="brevs-img-w"><img src="img/rev-2.jpg" class="brevs-img" /></a>
-                    <div class="brevs-r">
-                      <div class="brevs-row-1"><span class="brevs-name">Александр</span><span class="brevs-date">10.10.2021</span></div>
-                      <div class="brevs-desc">Покупал тут контейнер под мастерскую. Привезли через пару дней, рассказали как просто собрать. Благо никакой...</div>
-                      <div class="brevs-links"><a href="#" class="brevs-link">Скрыть комментарии (1)</a><a href="#" class="brevs-link">Ответить</a></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="brevs-it">
-                  <div class="brevs-inn">
-                    <a href="#" class="brevs-img-w"><img src="img/rev-2.jpg" class="brevs-img" /></a>
-                    <div class="brevs-r">
-                      <div class="brevs-row-1"><span class="brevs-name">Александр</span><span class="brevs-date">10.10.2021</span></div>
-                      <div class="brevs-desc">Покупал тут контейнер под мастерскую. Привезли через пару дней, рассказали как просто собрать. Благо никакой...</div>
-                      <div class="brevs-links"><a href="#" class="brevs-link">Скрыть комментарии (1)</a><a href="#" class="brevs-link">Ответить</a></div>
-                      <div class="brevs-it-answ">
-                        <div class="brevs-inn">
-                          <a href="#" class="brevs-img-w"><img src="img/rev-3.jpg" class="brevs-img" /></a>
-                          <div class="brevs-r">
-                            <div class="brevs-row-1"><span class="brevs-name">Александр</span><span class="brevs-date">10.10.2021</span></div>
-                            <div class="brevs-desc">Покупал тут контейнер под мастерскую. Привезли через пару дней, рассказали как просто собрать. Благо никакой...</div>
-                            <div class="brevs-links"><a href="#" class="brevs-link">Ответить</a></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <div class="head">Отзывы</div>
+              @@include('var/_brews-w.html')
               <div class="addbrevs">
                 <div class="head-2">Оставить отзыв</div>
-                <form class="addbrevs-form">
-                  <div class="addbrevs-row-1">
-                    <input class="addbrevs-input" type="text" placeholder="Ваш телефон" />
-                    <div class="addbrevs-reg">или <a href="#">зарегистрироваться</a></div>
-                    <input class="addbrevs-input" type="text" placeholder="E-mail" />
-                  </div>
-                  <textarea class="addbrevs-area" placeholder="Ваш телефон"></textarea><a href="#" class="addbrevs-butt butt">Отправить</a>
-                  <div class="addbrevs-rules">Нажимая кнопку “Отправить”, Вы соглашаетесь с <a href="#">правилами нашего сайта</a></div>
-                </form>
+
+                @@include('var/_addbrevs-form.html')                
               </div>
-            </div>
+              <div class="bsimcomps">                
+                <div class="head-2">Похожие компании</div>
+                <div class="bsimcomps-w">
+                  @@include('var/_1-img.html')
+                  @@include('var/_1-no-img.html')
+                </div>                
+              </div><!--bsimcomps-->
+            </div><!--brevs-->
           </div>
           <div class="column-r">
             <div class="rconts">
@@ -288,6 +244,7 @@
           </div>
         </div>
       </div>
+
 
 
       @@include('var/_footer.html')

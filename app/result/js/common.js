@@ -77,19 +77,22 @@ $('.compgal-more').click(function (e) {
   $('.compgal-w').toggleClass('on');
 });
 
-$('[data-fancybox="gallery"]').fancybox({
-  arrows: true,
-  infobar: false,
-  smallBtn: false,
-  toolbar: false,
-  iframe : {
-    css : {
-      width : '950px'
-    }
-  },    
-  slideClass: "myClass",
-  baseClass: "myclass"
-});
+if ( $('[data-fancybox="gallery"]').length  ) {
+
+  $('[data-fancybox="gallery"]').fancybox({
+    arrows: true,
+    infobar: false,
+    smallBtn: false,
+    toolbar: false,
+    iframe : {
+      css : {
+        width : '950px'
+      }
+    },    
+    slideClass: "myClass",
+    baseClass: "myclass"
+  });
+}
 
 $('.bconts-col-3').each(function () {
   let linkk = $(this).find('a'),
