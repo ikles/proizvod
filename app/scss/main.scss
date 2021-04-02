@@ -196,7 +196,8 @@ body {
 .msearch-form {
   display: flex;
   align-items: center;
-  width: 945px;
+  width: 100%;
+  max-width: 945px;
   height: 80px;
   background: rgb(255, 255, 255);
   box-shadow: rgba(132, 147, 160, 0.15) 0px 20px 50px;
@@ -354,7 +355,8 @@ input[type="text"].msearch-input {
 }
 
 .mdesk-w {
-  width: 762px;
+  max-width: 762px;
+  width: 100%;
   font-size: 24px;
   line-height: 1.6;
   text-align: center;
@@ -651,13 +653,10 @@ h2 {
   }
 
   .active {
-    .tabs_control_link {
-      font-size: 25px;
+    .tabs_control_link {      
       font-weight: bold;
       color: rgb(46, 96, 255);
-      display: flex;
-      align-items: flex-end;    
-      padding-top: 0px;
+      
     }    
   }
 
@@ -782,9 +781,27 @@ h2 {
   color: rgb(20, 18, 31);
   padding-right: 24px;
   display: inline-block;
-  background-image: url("../img/arr-r-b.svg");
-  background-repeat: no-repeat;
-  background-position: right center;
+  position: relative;
+  display: flex;  
+  align-items: center;
+  &:after {
+    flex: none;
+    margin-left: 14px;
+    content: "";
+    display: block;
+    background-image: url("../img/arr-r-b.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    width: 10px;
+    height: 8.5px;
+  }  
+  &:hover {
+    text-decoration: none;
+    color: $lincol;
+    &:after {
+      background-image: url('../img/arr-r-bl.svg');
+    }
+  }
 }
 
 .tabs_content_item {
@@ -1243,12 +1260,12 @@ h2 {
 .column-l {
   flex-grow: 1;
   margin-right: 30px;
+  width: 100%;
 }
 
 .column-r {
   width: 354px;
-  flex: 0 0 auto;
-  
+  flex: none;  
 }
 
 .comp-nav {
@@ -1503,11 +1520,13 @@ h2 {
 }
 
 .bconts-w {
+  width: 100%;
 }
 
 .bconts-row {
   display: flex;
   margin-bottom: 17px;
+  width: 100%;
 }
 
 .bconts-col-1 {
@@ -1613,16 +1632,19 @@ h2 {
 
 .brevs-w {
   margin-top: 47px;
+  width: 100%;
 }
 
 .brevs-it {
   border-bottom: 1px solid rgba(183, 188, 198, 0.5);
   padding-bottom: 51px;
   padding-top: 48px;
+  width: 100%;
 }
 
 .brevs-inn {
   display: flex;
+  width: 100%;
 }
 
 .brevs-img-w {
@@ -1631,7 +1653,7 @@ h2 {
   border-radius: 34px;
   background-color: rgb(243, 243, 243);
   margin-right: 30px;
-  flex: 0 0 auto;
+  flex: none;
   overflow: hidden;
 }
 
@@ -1669,9 +1691,11 @@ h2 {
   color: rgb(20, 18, 31);
   margin-bottom: 24px;
   max-width: 457px;
+  width: 100%;
 }
 
 .brevs-links {
+  width: 100%;
 }
 
 .brevs-link {
@@ -1848,9 +1872,11 @@ input[type="text"].addbrevs-input {
   padding-bottom: 79px; 
 }    
 
-.bsimcomps-w {  
+.bsimcomps-w { 
+width: 100%; 
   .manufacturers-card {
     margin-bottom: 20px;
+    width: 100%;
   }
   .manufacturers-card-info {
     padding-top: 0;
@@ -3031,7 +3057,7 @@ input[type="text"].manufacturers-cond-item-input {
 .simpurchases {
   margin-top: 67px;
   .procur-categ-card {
-    
+
   }
   .product-similar-txt-3 {
     margin-top: 18px;
@@ -3359,10 +3385,7 @@ input[type="text"].manufacturers-cond-item-input {
 
 
 
-
-
-
-
+@import "_mnu.scss";
 @import "_media.scss";
 @import "_hides.scss";
 @import "_after-styless";

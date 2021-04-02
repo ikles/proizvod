@@ -37,7 +37,7 @@ $('.mnav-w .tabs_control_link').click(function (e) {
 });
 
 
-$('.wrapper').prepend('<span class="eye-3"></span>');
+//$('.wrapper').prepend('<span class="eye-3"></span>');
 
 
 $('.eye-3').click(function (e) {

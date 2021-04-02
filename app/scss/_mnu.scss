@@ -1,4 +1,4 @@
-@media (max-width : 768px) {
+@media (max-width : 992px) {
   .top-mnu {
     display: none;
     position: absolute;
@@ -64,8 +64,9 @@
     transition: all 0.3s;    
     backface-visibility: hidden;
     width: 16px;
-    height: 3px;   
-    background: #000 
+    height: 2px;   
+    background: #000; 
+    border-radius: 2px;
     
   }
   .toggle-mnu span {
@@ -75,23 +76,23 @@
       left: 0;
       top: -4px;
       width: 16px;
-      height: 3px;   
+      height: 2px;   
       background: #000;
       transition: all 0.3s;    
       backface-visibility: hidden;             
-      border-radius: 1px;
+      border-radius: 2px;
     }
   }
   .toggle-mnu span:after {
-    top: 3px;     
+    top: 6px;     
   }
   .toggle-mnu span:before {
-
+    top: -6px;
   }
 
   .toggle-mnu {      
     span {
-      background-color: transparent;
+
     }
   }
 
@@ -105,7 +106,9 @@
     height: 24.5px;
     background: url("../img/top-close.svg") $nr 0 0;
   }
-
+  .toggle-mnu.on span    {
+    height: 0;
+  }
   .toggle-mnu.on span:before    {
     transform: rotate(45deg) translate(5px, 5px);
     top: -6px;
@@ -121,7 +124,7 @@
 }
 
 
-@media (min-width: 769px) {
+@media (min-width: 993px) {
   .toggle-mnu {
     display: none;
   }
