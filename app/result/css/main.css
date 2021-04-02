@@ -3779,9 +3779,14 @@ input[type="text"].manufacturers-cond-item-input {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
+  .rconts {
+    margin-left: 0;
+    max-width: 100%; }
   .bconts-col-2 {
     width: 330px;
     margin-left: 26px; }
+  .compage-columns .column-r {
+    width: 268px; }
   .manufacturers-card-info-col-1 {
     width: auto; }
   .addbrevs-row-1 {
@@ -3790,7 +3795,29 @@ input[type="text"].manufacturers-cond-item-input {
     width: 100%; }
   .addbrevs-reg {
     margin-bottom: 20px;
-    margin-top: 20px; } }
+    margin-top: 20px; }
+  .comp-nav a {
+    font-size: 16px; }
+  .abcomp-act {
+    margin-right: 73px; }
+  .productis-it {
+    width: calc(33.3333% - 10px); }
+  .bconts,
+  .brequisits,
+  .compgal,
+  .brevs,
+  .addbrevs,
+  .bsimcomps,
+  .productis {
+    margin-top: 50px; }
+  .brevs-w {
+    margin-top: 7px; }
+  .addbrevs .head-2 {
+    margin-bottom: 28px; }
+  .bsimcomps {
+    padding-bottom: 49px; }
+  .addbrevs-rules {
+    line-height: 1.7; } }
 
 @media (max-width: 992px) {
   .contain {
@@ -3878,7 +3905,32 @@ input[type="text"].manufacturers-cond-item-input {
   .foot-row-1 {
     padding-bottom: 38px; }
   .foot-row-2 {
-    padding-top: 37px; } }
+    padding-top: 37px; }
+  .compage-columns {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    .compage-columns .column-l {
+      width: 100%;
+      margin-right: 0; }
+    .compage-columns .column-r {
+      margin-bottom: 40px; }
+  .bsimcomps {
+    padding-bottom: 30px; }
+  .rconts-ul {
+    margin: 35px 0; }
+  .comp-card {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .comp-card-img {
+    margin-bottom: 20px; }
+  .comp-card-info-a-geo {
+    margin-bottom: 19px; }
+  .comp-card-top {
+    margin-top: 0; }
+    .comp-card-top .manufacturers-card-info {
+      margin-left: 0; } }
 
 @media (max-width: 768px) {
   .contain {
@@ -3906,7 +3958,57 @@ input[type="text"].manufacturers-cond-item-input {
           -ms-flex-order: 3;
               order: 3; }
   .foot-row-1 {
-    padding-bottom: 0; } }
+    padding-bottom: 0; }
+  .manufacturers-card-info-row {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .comp-card-top .comp-card-info-col-2 {
+    margin-top: 30px;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+  .comp-err-link {
+    margin-top: 26px;
+    text-align: left; }
+  .comp-nav {
+    width: 750px; }
+  .comp-nav-w {
+    overflow-x: scroll;
+    margin-bottom: 40px; }
+  .comp-nav a {
+    padding-bottom: 15px; }
+  .comp-nav {
+    padding-bottom: 20px;
+    margin-bottom: 34px;
+    margin-bottom: 0; }
+  .comp-page h2, .purchase-page h2 {
+    margin-bottom: 35px; }
+  .abcomp-act {
+    margin-right: 0;
+    margin-top: 20px;
+    width: 100%; }
+  .abcomp-acts {
+    margin-top: 23px; }
+  .compgal-w {
+    height: 135px; }
+  .compgal-it {
+    width: calc(25% - 10px);
+    height: 135px;
+    margin-bottom: 15px; }
+  .bconts, .brequisits, .compgal, .brevs, .addbrevs, .bsimcomps, .productis {
+    margin-top: 36px; }
+  .compgal {
+    padding-bottom: 36px; }
+  .productis-w {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .productis-it {
+    width: calc(50% - 10px);
+    margin-bottom: 25px; }
+  .productis-w {
+    margin-bottom: 8px; } }
 
 @media (max-width: 640px) {
   .contain {
