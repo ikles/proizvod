@@ -21,17 +21,15 @@
     @@include('var/_top-s.html')
     <div class="dev-page">
       <div class="contain">
-        <div class="bread">
-          <div class="contain">
-            <div class="bread-w">
-              <ul class="bread-ul">
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Производители</a></li>
-                <li><a href="#">Авто</a></li>
-                <li><span>Автотовары</span></li>
-              </ul>
-            </div>
-          </div>
+        <div class="bread">          
+          <div class="bread-w">
+            <ul class="bread-ul">
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">Производители</a></li>
+              <li><a href="#">Авто</a></li>
+              <li><span>Автотовары</span></li>
+            </ul>
+          </div>          
         </div>
       </div>
       <div class="manufacturers">
@@ -130,27 +128,36 @@
                 </div>
               </div>
             </div>
+
+
+
             <div class="column-r">
+              <a href="#" class="show-search-more toggle" data-swap="Скрыть расширенный поиск" data-text="Показать расширенный поиск">Показать расширенный поиск</a>
               @@include('var/_manufacturers-filtr.html')
-              <div class="manufacturers-categor">
-                <div class="manufacturers-select-txt">Категории</div>
-                <ul class="manufacturers-categor-ul">
-                  <li class="manufacturers-categor-li"><a href="#" class="manufacturers-categor-a">Авиаперелёты</a></li>
-                  <li class="manufacturers-categor-li"><a href="#" class="manufacturers-categor-a-2">Утитилизация</a></li>
-                  <li class="manufacturers-categor-li"><a href="#" class="manufacturers-categor-a-2">Бухгалтерия</a></li>
-                  <li class="manufacturers-categor-li"><a href="#" class="manufacturers-categor-a-2">Программное обеспечение</a></li>
-                </ul>
-              </div>
-              <div class="manufacturers-adv">
-                <div class="manufacturers-adv-txt-1">Производителям</div>
-                <div class="manufacturers-adv-txt-2">В нашем каталоге более 20 000 компаний - производителей. Присоединяйтесь к нам!</div>
-                <a href="#" class="manufacturers-adv-btn butt-w">Зарегистрироваться</a>
-              </div>
-              <div class="manufacturers-dil">
-                <div class="manufacturers-dil-img-w"><img src="img/dil.jpg" /></div>
-                <div class="manufacturers-dil-txt">Категории</div>
-                <a href="#" class="manufacturers-dil-a">Хоккейный корт</a>
-              </div>              
+              <div class="rinf-dil hide-992">
+                <div class="manufacturers-categor">
+                  <div class="manufacturers-select-txt">Категории</div>
+                  <ul class="manufacturers-categor-ul">
+                    <li class="manufacturers-categor-li"><a href="#" class="manufacturers-categor-a">Авиаперелёты</a></li>
+                    <li class="manufacturers-categor-li"><a href="#" class="manufacturers-categor-a-2">Утитилизация</a></li>
+                    <li class="manufacturers-categor-li"><a href="#" class="manufacturers-categor-a-2">Бухгалтерия</a></li>
+                    <li class="manufacturers-categor-li"><a href="#" class="manufacturers-categor-a-2">Программное обеспечение</a></li>
+                  </ul>
+                </div>
+                <div class="manufacturers-inff">
+                  <div class="manufacturers-inff-txt-1">Производителям</div>
+                  <div class="manufacturers-inff-txt-2">В нашем каталоге более 20 000 компаний - производителей. Присоединяйтесь к нам!</div>
+                  <a href="#" class="manufacturers-inff-btn butt-w">Зарегистрироваться</a>
+                </div>
+
+                <div class="manufacturers-dil">
+                  <div class="manufacturers-dil-img-w"><img src="img/dil.jpg" /></div>
+                  <div class="manufacturers-dil-txt">Категории</div>
+                  <a href="#" class="manufacturers-dil-a">Хоккейный корт</a>
+                </div>
+              </div><!--rinf-dil-->
+
+
             </div>            
           </div>
           @@include('var/_pagin.html')          
@@ -159,6 +166,20 @@
 
       </div><!--cont-->
     </div><!--page-->
+
+    <div class="rinf-dil show-992">
+      <div class="manufacturers-inff">
+        <div class="manufacturers-inff-txt-1">Производителям</div>
+        <div class="manufacturers-inff-txt-2">В нашем каталоге более 20 000 компаний - производителей. Присоединяйтесь к нам!</div>
+        <a href="#" class="manufacturers-inff-btn butt-w">Зарегистрироваться</a>
+      </div>
+
+      <!--div class="manufacturers-dil">
+        <div class="manufacturers-dil-img-w"><img src="img/dil.jpg" /></div>
+        <div class="manufacturers-dil-txt">Категории</div>
+        <a href="#" class="manufacturers-dil-a">Хоккейный корт</a>
+      </div-->
+    </div><!--rinf-dil-->
 
     <div class="category">
       <div class="contain">
