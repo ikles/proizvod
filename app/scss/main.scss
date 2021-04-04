@@ -1093,7 +1093,8 @@ h2 {
 
 .bread {
   padding-top: 19px;
-  padding-bottom: 30px;
+  padding-bottom: 30px;  
+  margin-bottom: 31px;  
   ul {
     margin-bottom: 0px;
   }
@@ -1918,8 +1919,7 @@ input[type="text"].addbrevs-input {
 }
 
 
-.manufacturers {
-  margin-top: 32px;
+.manufacturers {  
   margin-bottom: 99px;
   h1 {
     font-style: normal;
@@ -2827,9 +2827,7 @@ input[type="text"].manufacturers-cond-item-input {
   h1 {
     margin-bottom: 40px;
   }
-  .bread {
-    margin-bottom: 31px;
-  }
+  
 }
 .manufacturers-cond-item-4 {
   width: 236px;
@@ -2863,7 +2861,7 @@ input[type="text"].manufacturers-cond-item-input {
   margin-bottom: 48px;
 }
 
-.purchases-card-txt-1 {
+.purchases-card h1 {
   font-weight: bold;
   font-size: 25.6px;
   color: rgb(20, 18, 31);
@@ -2912,8 +2910,8 @@ input[type="text"].manufacturers-cond-item-input {
 
 }
 
-.purchases-columns-w {
-  border-bottom: 1px solid rgb(183, 188, 198);
+.purchases-columns-w {  
+  border-bottom: 1px solid rgba(183, 188, 198, 0.5);
   padding-bottom: 53px;
   width: 100%;
 }
