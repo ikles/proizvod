@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Категория услуг</title>  
+  <link rel="stylesheet" href="css/select2.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+  <div class="wrapper">    
+    @@include('var/_top-s.html')
+    <div class="catserv-page">
+      <div class="contain">
+        <div class="bread">          
+          <div class="bread-w">
+            <ul class="bread-ul">
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">Производители</a></li>
+              <li><a href="#">Авто</a></li>
+              <li><span>Автотовары</span></li>
+            </ul>
+          </div>          
+        </div><!--bread-->
+        <div class="columns catserv-cols catpurch-cols-1">
+          <div class="column-l">
+            <div class="manufacturers-cond">
+
+              <div class="manufacturers-cond-item">
+                <div class="manufacturers-cond-item-txt">Регион:</div>
+                <select class="mnav-sel manufacturers-cond-item-search">
+                  <option value="100 км">Не выбрано</option>
+                  <option value="200 км">Пермь</option>
+                </select>
+              </div>   
+              <div class="manufacturers-cond-item">
+                <div class="manufacturers-cond-item-txt">Город:</div>
+                <select class="mnav-sel manufacturers-cond-item-search">
+                  <option value="100 км">Не выбрано</option>
+                  <option value="200 км">Пермь</option>
+                </select>
+              </div>   
+              <div class="manufacturers-cond-item">
+                <div class="manufacturers-cond-item-txt">Тип услуг:</div>
+                <select class="mnav-sel manufacturers-cond-item-search">
+                  <option value="100 км">Не выбрано</option>
+                  <option value="200 км">Пермь</option>
+                </select>
+              </div>                      
+
+            </div><!--this-->
+
+          </div><!--col-l-->
+          <div class="column-r">
+            <button class="butt procur-categ-btn" type="submit">Показать</button> 
+          </div>
+        </div><!--columns-->
+        <div class="columns catserv-cols catpurch-cols-2">
+          <div class="column-l">
+
+            <div class="catserv-cards">
+              @@include('var/_1-pur-noimg.html')
+              @@include('var/_1-pur-noimg.html')
+              @@include('var/_1-pur-noimg.html')
+              @@include('var/_1-pur-noimg.html')
+              @@include('var/_1-pur-noimg.html')
+              @@include('var/_1-pur-noimg.html')
+              @@include('var/_1-pur-noimg.html')
+              @@include('var/_1-pur-noimg.html')
+              @@include('var/_1-pur-noimg.html')
+              @@include('var/_1-pur-noimg.html')
+            </div><!--catserv-cards-->
+
+          </div><!--column-l-->
+          <div class="column-r">
+           <div class="procur-categ-r">                  
+            <div class="manufacturers-categor">
+              <div class="manufacturers-select-txt">Категории</div>
+              <ul class="manufacturers-categor-ul">
+                <li>
+                  <a href="#">Авиаперелёты</a>                                         
+                </li>
+                <li><a href="#">Утитилизация</a></li>
+                <li><a href="#">Бухгалтерия</a></li>
+                <li><a href="#">Программное обеспечение</a></li>
+                <li><a href="#">Консалтинговые услуги</a></li>
+                <li><a href="#">Таможенные услуги</a></li>
+                <li><a href="#">Технологии</a></li>
+                <li><a href="#">Полиграфия</a></li>
+                <li><a href="#">Прочие услуги</a></li>
+              </ul><!--this-->                    
+            </div>
+            <div class="manufacturers-inff">
+              <div class="manufacturers-inff-txt-1">Производителям</div>
+              <div class="manufacturers-inff-txt-2">В нашем каталоге более 20 000 компаний - производителей. Присоединяйтесь к нам!</div>
+              <a href="#" class="manufacturers-inff-btn butt-w">Зарегистрироваться</a>
+            </div>
+          </div>
+        </div><!--column-r-->
+      </div><!--columns-->
+    </div><!--cont-->
+  </div><!--page-->
+
+  @@include('var/_footer.html')
+</div><!--wrapper-->
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>
+
