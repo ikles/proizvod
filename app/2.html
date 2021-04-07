@@ -43,10 +43,16 @@
                 <h1>Интеграл плюс
                   <span class="manufacturers-card-info-a-1-span"></span>
                 </h1>
-                <a href="#" class="comp-card-info-a-geo">Татарстан, Казань</a>
+                <div class="comp-card-info-a-geo">Татарстан, Казань</div>
                 <div class="comp-card-info-txt">Производство и разработка упаковочного оборудования</div>
               </div>
-              <div class="comp-card-info-col-2"><a href="#" class="comp-butt butt">Заказать продукцию</a><a href="#" class="comp-card-info-col-2-btn"></a><a href="#" class="comp-err-link">Сообщить об ошибке</a></div>
+              <div class="comp-card-info-col-2"><a href="#" class="comp-butt butt">Заказать продукцию</a>
+                
+                <label class="productis-img-w-span">
+        <input type="checkbox">
+        <span></span>
+      </label>
+                <a href="#" class="comp-err-link">Сообщить об ошибке</a></div>
             </div>
           </div>
         </div>
@@ -54,15 +60,15 @@
           <div class="column-l">
             <div class="comp-nav-w">
               <ul class="comp-nav">
-                <li><a href="#" class="act">О компании</a></li>
-                <li><a href="#">Фото</a></li>
-                <li><a href="#">Продукция</a></li>
-                <li><a href="#">Новости</a></li>
-                <li><a href="#">Контакты</a></li>
-                <li><a href="#">Реквизиты</a></li>
+                <li><a href="#abcomp" class="act">О компании</a></li>
+                <li><a href="#abcogal">Фото</a></li>
+                <li><a href="#productis">Продукция</a></li>
+                <li><a href="#pubss">Новости</a></li>
+                <li><a href="#bconts">Контакты</a></li>
+                <li><a href="#brequisits">Реквизиты</a></li>
               </ul>
             </div>
-            <div class="abcomp">
+            <div id="abcomp" class="abcomp">
               <h2>
                 О компании
               </h2>
@@ -83,8 +89,10 @@
                 </a>
               </div>
             </div>
-            @@include('var/_compgal.html')
-            <div class="productis">
+            <div id="abcogal" class="abcogal">
+              @@include('var/_compgal.html')
+            </div>
+            <div id="productis" class="productis">
               <h2>Продукция</h2>
               <div class="productis-nav-w">
                 <ul class="productis-nav">
@@ -112,7 +120,7 @@
               </div>
               <a href="#" class="productis-more">Показать все товары</a>
             </div>
-            <div class="pubss">
+            <div id="pubss" class="pubss">
               <h2>Публикации</h2>
               <div class="pubss-w">
                 <div class="pubss-it">
@@ -128,7 +136,7 @@
               </div>
               <a href="#" class="pubss-more">Показать все публикации</a>
             </div>
-            <div class="bconts">
+            <div id="bconts" class="bconts">
               <h2>Контакты</h2>
               <div class="bconts-w">
                 <div class="bconts-row">
@@ -173,7 +181,7 @@
                 </div>
               </div>
             </div>
-            <div class="brequisits">
+            <div id="brequisits" class="brequisits">
               <h2>Реквизиты</h2>
               <div class="brequisits-w">
                 <div class="brequisits-row">

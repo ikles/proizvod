@@ -48,7 +48,9 @@ $('.eye-3').click(function (e) {
 
 
 
-$('select').select2();
+$('select').select2({
+  minimumResultsForSearch: -1
+});
 
 $('.mnav-sel').on('select2:select', function (e) {
   if ( e.params.data.id == 'По рубрикам' ) {
@@ -123,6 +125,72 @@ button.click(function(){
   el.data("swap", text);
   el.html(swap);
 });
+
+$('.mnav-links-li-par > a').click(function (e) {
+  e.preventDefault();
+  let child = $(this).parent().next('.mnav-links-ul-2');
+  child.show();
+  $('.mnav-links-li').hide();
+});
+
+$('.mnav-links-li-back').click(function (e) {
+  e.preventDefault();
+  $(this).parent().hide();
+  $('.mnav-links-li').show();
+});
+
+
+$('.tsearch').click(function (e) {
+  e.preventDefault();
+});
+
+
+$('.top-search').click(function (e) {
+  e.preventDefault();
+  $('.top-search-f').toggleClass('on');
+  $('.top-right-link').toggleClass('off');
+});
+
+
+
+$('.back-s').click(function (e) {
+  e.preventDefault();
+  $('.top-search-f').removeClass('on');
+  $('.top-right-link').removeClass('off');
+});
+
+
+
+let prodImg = $('.product-photo-span img');
+
+$('.product-photo-mini').click(function (e) {
+  e.preventDefault();
+  prodImg.fadeOut(100);
+  let miniImgSrc = $(this).find('img').attr('src');
+  prodImg.attr('src', miniImgSrc);
+  prodImg.fadeIn(100);
+})
+
+
+  
+
+
+/********/
+
+const anchors = document.querySelectorAll('a[href*="#"]')
+
+for (let anchor of anchors) {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault()
+    
+    const blockID = anchor.getAttribute('href').substr(1)
+    
+    document.getElementById(blockID).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+  })
+}
 
 
 }); //ready
