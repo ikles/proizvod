@@ -52,7 +52,7 @@ $('select').select2({
   minimumResultsForSearch: -1
 });
 
-$('.mnav-sel').on('select2:select', function (e) {
+/*$('.mnav-sel').on('select2:select', function (e) {
   if ( e.params.data.id == 'По рубрикам' ) {
     $('.mnav-links-w').removeClass('active');
     $('.mnav-links-w-1').addClass('active');
@@ -61,7 +61,7 @@ $('.mnav-sel').on('select2:select', function (e) {
     $('.mnav-links-w').removeClass('active');
     $('.mnav-links-w-2').addClass('active');
   }
-});
+});*/
 
 $('.comp-more').click(function (e) {
   e.preventDefault();
@@ -139,6 +139,22 @@ $('.mnav-links-li-back').click(function (e) {
   $('.mnav-links-li').show();
 });
 
+
+$('.mnav-links-li-inn-par > a').click(function (e) {
+  e.preventDefault();
+  let child = $(this).parent().next('.mnav-links-ul-3');
+  child.show();
+  $('.mnav-links-li-inn').hide();
+});
+
+$('.mnav-links-li-back2').click(function (e) {
+  e.preventDefault();
+  $(this).parent().hide();
+  $('.mnav-links-li-inn').show();
+});
+
+//.mnav-links-li-inn-par
+//.mnav-links-li-back2
 
 $('.tsearch').click(function (e) {
   e.preventDefault();

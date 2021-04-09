@@ -5,7 +5,7 @@
   <!--meta name="viewport" content="width=1200px"-->
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Категории продукта</title>  
+  <title>Категории публикаций</title>  
   <link rel="stylesheet" href="css/select2.min.css">
   <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/main.css">
@@ -18,42 +18,124 @@
 </head>
 <body>
   <div class="wrapper">    
+    @@include('var/_top-s.html')
+    <div class="catpubs-page">
+      <div class="contain">
+        <div class="bread">          
+          <div class="bread-w">
+            <ul class="bread-ul">
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">Производители</a></li>
+              <li><a href="#">Авто</a></li>
+              <li><span>Автотовары</span></li>
+            </ul>
+          </div>          
+        </div><!--bread-->
+        <h1>Публикации</h1>
 
-    <div class="contain">
-      <div class="block-w">
-        <div class="block">
-          Text
+        <div class="manufacturers-cond">
+
+          <div class="manufacturers-cond-item">
+            <div class="manufacturers-cond-item-txt">Раздел:</div>
+
+
+            <select class="mnav-sel manufacturers-cond-item-search">
+              <option value="Новые">Не выбрано</option>
+              <option value="старые">Раздел 2</option>
+            </select>            
+          </div>
+          <button class="butt procur-categ-btn" type="submit">Показать</button>
+        </div><!--this-->
+
+        <div class="publics-w">
+          <div class="publics-its">
+            <div class="publics-it">
+              <a class="publics-img-w-a"><img src="img/public-1.jpg" /></a>
+              <div class="pubss-txt-1">10.03.2021</div>
+              <a class="publics-it-txt-a">Поставка жидких моющих средств</a>
+              <div class="publics-it-txt">НЗБХ начал отгружать жидкие моющие средства в еврокуб...</div>
+            </div>
+            <div class="publics-it">
+              <a class="publics-img-w-a noimg"><img src="img/Image.png" /></a>
+              <div class="pubss-txt-1">10.03.2021</div>
+              <a class="publics-it-txt-a">Продукция "КУВЫРКОМ"</a>
+              <div class="publics-it-txt">На сегодняшний день «Московский Дом Книги» -...</div>
+            </div>
+            <div class="publics-it">
+              <a class="publics-img-w-a"><img src="img/public-3.jpg" /></a>
+              <div class="pubss-txt-1">10.03.2021</div>
+              <a class="publics-it-txt-a">Завершена аттестация испытательной лаборатории по сорбентам и углям</a>
+              <div class="publics-it-txt">В конце 2020 года, при поддержке Центра кластерно...</div>
+            </div>
+            <div class="publics-it">
+              <a class="publics-img-w-a"><img src="img/public-4.jpg" /></a>
+              <div class="pubss-txt-1">10.03.2021</div>
+              <a class="publics-it-txt-a">Скидка 10% на подушки Папитто</a>
+              <div class="publics-it-txt">С 1 по 31 марта скидка 10% на подушки для новорожденных.</div>
+            </div>
+            <div class="publics-it">
+              <a class="publics-img-w-a"><img src="img/public-5.jpg" /></a>
+              <div class="pubss-txt-1">10.03.2021</div>
+              <a class="publics-it-txt-a">Поставка жидких моющих средств</a>
+              <div class="publics-it-txt">НЗБХ начал отгружать жидкие моющие средства в еврокуб...</div>
+            </div>
+            <div class="publics-it">
+              <a class="publics-img-w-a"><img src="img/public-6.jpg" /></a>
+              <div class="pubss-txt-1">10.03.2021</div>
+              <a class="publics-it-txt-a">Продукция "КУВЫРКОМ"</a>
+              <div class="publics-it-txt">На сегодняшний день «Московский Дом Книги» -...</div>
+            </div>
+            <div class="publics-it">
+              <a class="publics-img-w-a"><img src="img/public-7.jpg" /></a>
+              <div class="pubss-txt-1">10.03.2021</div>
+              <a class="publics-it-txt-a">Завершена аттестация испытательной лаборатории по сорбентам и углям</a>
+              <div class="publics-it-txt">В конце 2020 года, при поддержке Центра кластерно...</div>
+            </div>
+            <div class="publics-it">
+              <a class="publics-img-w-a"><img src="img/public-8.jpg" /></a>
+              <div class="pubss-txt-1">10.03.2021</div>
+              <a class="publics-it-txt-a">Скидка 10% на подушки Папитто</a>
+              <div class="publics-it-txt">С 1 по 31 марта скидка 10% на подушки для новорожденных.</div>
+            </div>
+            <div class="publics-it">
+              <a class="publics-img-w-a"><img src="img/public-9.jpg" /></a>
+              <div class="pubss-txt-1">10.03.2021</div>
+              <a class="publics-it-txt-a">Поставка жидких моющих средств</a>
+              <div class="publics-it-txt">НЗБХ начал отгружать жидкие моющие средства в еврокуб...</div>
+            </div>
+            <div class="publics-it">
+              <a class="publics-img-w-a"><img src="img/public-10.jpg" /></a>
+              <div class="pubss-txt-1">10.03.2021</div>
+              <a class="publics-it-txt-a">Продукция "КУВЫРКОМ"</a>
+              <div class="publics-it-txt">На сегодняшний день «Московский Дом Книги» -...</div>
+            </div>
+            <div class="publics-it">
+              <a class="publics-img-w-a"><img src="img/public-11.jpg" /></a>
+              <div class="pubss-txt-1">10.03.2021</div>
+              <a class="publics-it-txt-a">Завершена аттестация испытательной лаборатории по сорбентам и углям</a>
+              <div class="publics-it-txt">В конце 2020 года, при поддержке Центра кластерно...</div>
+            </div>
+            <div class="publics-it">
+              <a class="publics-img-w-a"><img src="img/public-12.jpg" /></a>
+              <div class="pubss-txt-1">10.03.2021</div>
+              <a class="publics-it-txt-a">Скидка 10% на подушки Папитто</a>
+              <div class="publics-it-txt">С 1 по 31 марта скидка 10% на подушки для новорожденных.</div>
+            </div>
+          </div>
         </div>
-        <div class="block">
-          Text
+        <div class="pagin">
+          <ul class="pagin-ul">
+            <li class="pagin-li"><span class="pagin-span">1</span></li>
+            <li class="pagin-li"><a href="#" class="pagin-a">2</a></li>
+            <li class="pagin-li"><a href="#" class="pagin-a">3</a></li>
+            <li class="pagin-li"><a href="#" class="pagin-a">Далее</a></li>
+          </ul>
         </div>
-      </div>
-    </div>
+        
+      </div><!--cont-->
+    </div><!--page-->
 
-
-<table class="tbl">
-  <thead>
-    <tr>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>2</td>
-      <td>2</td>
-      <td>2</td>
-      <td>2</td>
-      <td>2</td>
-    </tr>
-  </tbody>
-</table>
-
-
-
+    @@include('var/_footer.html')
   </div><!--wrapper-->
 
   <script src="js/jquery-3.4.1.min.js"></script>
