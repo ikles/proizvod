@@ -19,6 +19,12 @@ jQuery(document).ready(function( $ ) {
 
 
 
+
+
+
+
+
+
 $(".top-mnu, .top-w").click(function (e) {
   e.stopPropagation();
 });
@@ -38,14 +44,23 @@ $('.mnav-w .tabs_control_link').click(function (e) {
 
 });
 
-$('.wrapper').prepend('<span class="eye-3"></span>');
+// $('.wrapper').prepend('<span class="eye-3"></span>');
 
+
+/**********/
+/*let pg = parseInt(document.location.pathname.match(/\d+/))
+$('body').addClass('active').css('background-image', "url('../img/"+pg+".jpg')");
+$('body:not(.active)').css('background-image', "unset");
 
 $('.eye-3').click(function (e) {
-  e.preventDefault();
+  e.preventDefault();  
   $('body').toggleClass('active');
-});
+  let pg = parseInt(document.location.pathname.match(/\d+/));
+  $('body.active').css('background-image', "url('../img/"+pg+".jpg')");
+  $('body:not(.active)').css('background-image', "unset");
 
+});*/
+/**********/
 
 
 $('select').select2({
@@ -188,7 +203,7 @@ $('.product-photo-mini').click(function (e) {
 })
 
 
-  
+
 
 
 /********/

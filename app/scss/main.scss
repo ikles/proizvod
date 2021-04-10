@@ -550,6 +550,9 @@ h2 {
   align-items: center;
 }
 
+
+  
+
 .nbuy-txt-3 {
   font-size: 17px;
   color: rgb(20, 18, 31);
@@ -1267,7 +1270,9 @@ input[type="text"].top-search-i {
 .columns {
 
 }
-
+.compage-columns {
+  margin-top: 47px;
+}
 .comp-card {
   min-height: 214px;
   height: auto;
@@ -2462,6 +2467,12 @@ input[type="text"].manufacturers-cond-item-input {
       margin-top: 24px;
       padding-left: 30px;
       margin-bottom: 24px;
+      li {
+        a {
+          background: none;
+          padding-left: 0;
+        }
+      }
     }
   }
   a {
@@ -2607,7 +2618,7 @@ input[type="text"].manufacturers-cond-item-input {
 }
 
 .category-bott-a {
-  font-size: 16px;
+  font-size: 17px;
   color: #2E60FF;
 }
 
@@ -3250,6 +3261,12 @@ a.productis-img-w-span-2 {
     font-size: 25.8px;
     margin-bottom: 51px;
   }
+  .simpurchases {
+    margin-top: 71px;
+  }
+  .nbuy-txt-row {
+    margin-bottom: 21px;
+  }
 }
 
 .purchases {
@@ -3447,9 +3464,18 @@ a.productis-img-w-span-2 {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-bottom: 12px;  
+  margin-bottom: 12px;
 }
 
+
+
+
+.nbuy-txt-row {
+  .nbuy-txt-1,
+  .nbuy-txt-2 {
+    margin-bottom: 0;
+  }
+}
 
 
 .nbuy-txt-2-w {
@@ -3625,7 +3651,7 @@ a.productis-img-w-span-2 {
 }
 
 .catpurch-cols-2 {
-  margin-top: 48px;
+  margin-top: 46px;
 }
 .catpurch-cols-1 {   
   align-items: flex-end;  
@@ -3644,6 +3670,12 @@ a.productis-img-w-span-2 {
     margin-top: 24px;
     margin-bottom: 100px;
   }  
+  .nbuy-txt-row {
+    margin-bottom: 25px;
+  }
+  .procur-categ-card {
+    margin-bottom: 23px;
+  }
 }
 
 
@@ -3680,6 +3712,7 @@ a.productis-img-w-span-2 {
 
 .comp-err-link-2 {
   margin-top: 49px;
+  white-space: nowrap;
 }
 
 
@@ -3704,6 +3737,25 @@ a.productis-img-w-span-2 {
 
 .service-page {
   padding-bottom: 76px;
+  .compgal {
+    padding-bottom: 129px;
+  }
+  .purchases-columns-cont-l-2 {
+    padding-bottom: 36px;
+  }
+  .nbuy-txt-row {
+    margin-top: -9px;
+    margin-bottom: 16px;
+  }
+  .product-similar-cat {
+    font-size: 17px;
+  }
+  .product-similar-txt-3 {
+    margin-top: 30px;
+  }
+  .procur-categ-card {
+    margin-bottom: 21px;
+  }
 }
 
 .product-similar-cat {
@@ -3897,7 +3949,7 @@ a.productis-img-w-span-2 {
 
 .sart-cont {
   margin-top: 0px;
-  width: 750px;
+  max-width: 750px;
   margin-bottom: 100px;
   .addbrevs {
     margin-top: 57px;
@@ -3995,8 +4047,7 @@ a.productis-img-w-span-2 {
 }
 
 .public-it {
-  display: flex;
-  align-items: center;
+  display: flex;  
   justify-content: flex-start;
   margin-right: 24px;
 }
