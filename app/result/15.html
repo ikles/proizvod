@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Личный кабинет</title>
+  <link rel="stylesheet" href="css/select2.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+  <div class="wrapper">
+        <div class="top">
+      <div class="contain">
+        <div class="top-w">
+          <a href="index.html" class="logo"><img src="img/logo.svg" /></a>
+          <div class="col-mnu">
+            <div class="hidden-mnu">
+              <a href="#" class="toggle-mnu"><span></span></a>
+            </div>
+            <div class="top-mnu">
+              <ul>
+                <li class="nav-tit">Навигация</li>
+                <li><a href="#">Производители</a></li>
+                <li><a href="#">Продукция</a></li>
+                <li><a href="#">Закупки</a></li>
+                <li><a href="#">Услуги</a></li>
+              </ul>
+              <div class="top-info">
+                <div class="bal">Баланс: 0 рублей</div>
+                <a href="#" class="add-mon butt">Пополнить счет</a>
+                <a href="#" class="moov-mon">Движение средств</a>
+                <ul class="user-cab">
+                  <li class="nav-tit">Дашборд</li>
+                  <li><a href="#">Моя компания</a></li>
+                  <li><a href="#">Моя продукция</a></li>
+                  <li><a href="#">Лента закупок</a></li>
+                  <li><a href="#">Заказы и сообщения</a></li>
+                  <li><a href="#">Техническая поддержка</a></li>
+                  <li><a href="#">Отзывы</a></li>
+                  <li><a href="#">Статистика</a></li>
+                  <li><a href="#">Настройки профиля</a></li>
+                </ul>
+              </div><!--top-info-->
+            </div>
+          </div>
+
+          <form class="top-search-f">
+            <a class="back-s" href="#"></a>
+            <input class="top-search-i" type="text" placeholder="Поиск по сайту">
+          </form>
+
+          <a href="#" class="top-search"></a>
+          <a href="#" class="like like-s">
+            <span class="like-num">
+              <span>12</span>
+            </span>
+          </a>
+          <a href="#" class="enter">Войти</a>
+        </div>
+      </div>
+    </div>
+    <div class="usercab-page">
+      <div class="contain">
+        <div class="pers-area-w">
+          <div class="danger">
+            <div class="danger-w">
+              <div class="danger-txt-1"><img src="img/Danger.svg" alt="">Необходимо подтвердить E-mail</div>
+              <div class="danger-txt-2">Проверьте свой почтовый ящик urmail@mail.ru и нажмите ссылку в письме. До тех пор пока E-mail не подтвержден функционал сайта ограничен.</div>
+              <div class="danger-a-w">
+                <a href="#">Выслать письмо для подтверждения ещё раз</a>
+                <a href="#">Изменить E-mail</a>
+              </div>
+            </div>
+          </div>
+          <div class="columns usercab-cols">
+            <div class="column-r">
+              <div class="throw-mon">
+                <div class="throw-mon-txt-1">Баланс: 0 рублей</div>
+                <button class="throw-mon-btn butt">Пополнить счет</button>
+                <a href="#" class="throw-mon-a">Движение средств</a>
+              </div>
+              <ul class="pers-area-ul">
+                <li><a href="#">Дашборд</a></li>
+                <li><a href="#">Моя компания</a></li>
+                <li><a href="#">Моя продукция</a></li>
+                <li><a href="#">Лента закупок</a></li>
+                <li><a href="#">Заказы и сообщения</a></li>
+                <li><a href="#">Техническая поддержка</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Статистика</a></li>
+                <li><a href="#">Настройки профиля</a></li>
+              </ul>
+            </div>
+            <!--col-r-->
+            <div class="column-l">
+              <div class="procur-categ-card procur-categ-card-cab">
+                <a class="comp-card-img"><img src="img/img-logo.png" /></a>
+                <div class="procur-categ-info">
+                  <div class="product-similar-row product-similar-row-2">
+                    <a class="product-similar-txt-2">Интеграл плюс</a>
+                  </div>
+                  <div class="product-similar-cat">Производитель автомасел и аксессуаров</div>
+                  <div class="product-similar-txt-3">
+                    Фабрика “Интеграл” вот уже 15 лет работает над улучшением качества, повышением технологичности и в то же время сохранением традиций
+                  </div>
+                </div>
+              </div>
+              <div class="pers-area-row">
+                <a href="#" class="pers-area-btn butt-w">Редактировать</a>
+                <a href="#" class="pers-area-btn butt-w">Статистика</a>
+                <a href="#" class="pers-area-btn butt-w">Выделить</a>
+              </div>
+              <div class="usercab-prods">
+                <div class="head-2">Товары</div>
+                <a href="#" class="usercab-prods-butt butt">Добавить продукт</a>
+              </div>
+              <!--usercab-prods-->
+              <div class="usercab-prods-w">
+                <div class="productis-it-2">
+                  <a href="#" class="productis-img-w-2">
+                    <img src="img/produ-4.jpg" class="productis-img" />
+                  </a>
+                  <a href="#" class="productis-tit">Маска для лица IKSELAS</a>
+                  <div class="productis-chars">Кол-во: <span class="productis-chars-span">От 1 000 шт.</span></div>
+                  <div class="productis-chars">Цена: <span class="productis-chars-span-2">155 ₽</span></div>
+                </div>
+                <!--productis-it-2-->
+                <div class="productis-it-2">
+                  <a href="#" class="productis-img-w-2">
+                    <img src="img/produ-5.jpg" class="productis-img" />
+                  </a>
+                  <a href="#" class="productis-tit">Маска для лица IKSELAS</a>
+                  <div class="productis-chars">Кол-во: <span class="productis-chars-span">От 1 000 шт.</span></div>
+                  <div class="productis-chars">Цена: <span class="productis-chars-span-2">155 ₽</span></div>
+                </div>
+                <!--productis-it-2-->
+                <div class="productis-it-2">
+                  <a href="#" class="productis-img-w-2">
+                    <img src="img/produ-3.jpg" class="productis-img" />
+                  </a>
+                  <a href="#" class="productis-tit">Маска для лица IKSELAS</a>
+                  <div class="productis-chars">Кол-во: <span class="productis-chars-span">От 1 000 шт.</span></div>
+                  <div class="productis-chars">Цена: <span class="productis-chars-span-2">155 ₽</span></div>
+                </div>
+                <!--productis-it-2-->
+              </div>
+              <!--usercab-prods-w-->
+
+              <div class="header2-w">
+                <div class="head-2">
+                  Статистика<span>с 12.12.2021</span>
+                </div>
+                <a href="#" class="hdr-link">Расширенная статистика</a>
+              </div>
+
+
+              <div class="stat-row">
+                <div class="stat">
+                  <div class="stat-txt-1">Просмотров
+                  страницы</div>
+                  <div class="stat-txt-2">100</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-txt-1">Просмотров
+                  контактов</div>
+                  <div class="stat-txt-2">15</div>
+                  <div class="stat-txt-w">
+                    <div class="stat-txt-3">Конверсия</div>
+                    <div class="stat-txt-4">15%</div>
+                  </div>
+                </div>
+                <div class="stat">
+                  <div class="stat-txt-1">Обращения<br>
+                  с сайта</div>
+                  <div class="stat-txt-2">15</div>
+                  <div class="stat-txt-w">
+                    <div class="stat-txt-3">Конверсия</div>
+                    <div class="stat-txt-4">15%</div>
+                  </div>
+                </div>
+                <div class="stat">
+                  <div class="stat-txt-1">Переходы<br>
+                  на сайт</div>
+                  <div class="stat-txt-2">15</div>
+                  <div class="stat-txt-w">
+                    <div class="stat-txt-3">Конверсия</div>
+                    <div class="stat-txt-4">15%</div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="prz-2 prz-w100">
+                <div class="prz-txts">
+                  <div class="prz-txt-22">Хотите купить продукцию?</div>
+                  <div class="prz-txt-33">Опубликуйте закупку. Укажите необходимую продукцию, ваш бюджет и сроки. Производители увидят ваше предложение и смогут сделать предложение.</div>
+                  <a href="#" class="prz-txt-butt-w butt butt-w">Добавить закупку</a>
+                </div>
+              </div>
+
+              <div class="usercab-prods usercab-prods-2">
+                <div class="head-2">Мои закупки</div>
+                <a href="#" class="usercab-prods-butt butt">Добавить закупку</a>
+              </div>
+              <!--usercab-prods-->
+
+              <div class="usercab-buys">
+                <div class="procur-categ-card">
+                  <a href="#" class="product-similar-img-w"><img src="img/wholes-2.jpg" /></a>
+                  <div class="procur-categ-info">
+                    <div class="product-similar-row">
+                      <a class="product-similar-txt-2">Женское нижнее белье и интимные товары</a>
+                      <div class="product-similar-heart-w">
+                        <label class="productis-img-w-span">
+                          <input type="checkbox">
+                          <span></span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="nbuy-txt-row">
+                      <div class="nbuy-txt-2-w">
+                        <div class="nbuy-txt-2">
+                          Санкт-Петербург, Россия
+                        </div>
+                      </div>
+                      <div class="nbuy-txt-1-w">
+                        <div class="nbuy-txt-1">10.03.2021</div>
+                      </div>
+                    </div>
+                    <div class="purchases-wholes-choice">
+                      <div class="purchases-columns-charact-txt">Тип: <span class="purchases-columns-charact-span">мелкий опт </span></div>
+                      <div class="purchases-columns-charact-txt">Объем: <span class="purchases-columns-charact-span">500 шт.</span></div>
+                    </div>
+                    <div class="product-similar-txt-3">Закупки каждый месяц.</div>
+                  </div>
+                </div>
+                <!--procur-categ-card-->
+                <div class="procur-categ-card">
+                  <a href="#" class="product-similar-img-w"><img src="img/wholes-2.jpg" /></a>
+                  <div class="procur-categ-info">
+                    <div class="product-similar-row">
+                      <a class="product-similar-txt-2">Женское нижнее белье и интимные товары</a>
+                      <div class="product-similar-heart-w">
+                        <label class="productis-img-w-span">
+                          <input type="checkbox">
+                          <span></span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="nbuy-txt-row">
+                      <div class="nbuy-txt-2-w">
+                        <div class="nbuy-txt-2">
+                          Санкт-Петербург, Россия
+                        </div>
+                      </div>
+                      <div class="nbuy-txt-1-w">
+                        <div class="nbuy-txt-1">10.03.2021</div>
+                      </div>
+                    </div>
+                    <div class="purchases-wholes-choice">
+                      <div class="purchases-columns-charact-txt">Тип: <span class="purchases-columns-charact-span">мелкий опт </span></div>
+                      <div class="purchases-columns-charact-txt">Объем: <span class="purchases-columns-charact-span">500 шт.</span></div>
+                    </div>
+                    <div class="product-similar-txt-3 product-similar-txt-find">
+                      Ищем постоянного надежного поставщика перчаток смотровых и хирургических нитриловых, перчаток...
+                    </div>
+                  </div>
+                </div>
+                <!--procur-categ-card-->
+                <div class="procur-categ-card">
+                  <a href="#" class="product-similar-img-w noimg"><img src="img/Image.png" /></a>
+                  <div class="procur-categ-info">
+                    <div class="product-similar-row">
+                      <a class="product-similar-txt-2">Женское нижнее белье и интимные товары</a>
+                      <div class="product-similar-heart-w">
+                        <label class="productis-img-w-span">
+                          <input type="checkbox">
+                          <span></span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="nbuy-txt-row">
+                      <div class="nbuy-txt-2-w">
+                        <div class="nbuy-txt-2">
+                          Санкт-Петербург, Россия
+                        </div>
+                      </div>
+                      <div class="nbuy-txt-1-w">
+                        <div class="nbuy-txt-1">10.03.2021</div>
+                      </div>
+                    </div>
+                    <div class="purchases-wholes-choice">
+                      <div class="purchases-columns-charact-txt">Тип: <span class="purchases-columns-charact-span">мелкий опт </span></div>
+                      <div class="purchases-columns-charact-txt">Объем: <span class="purchases-columns-charact-span">500 шт.</span></div>
+                    </div>
+                    <div class="product-similar-txt-3 product-similar-txt-find">
+                      Ищем постоянного надежного поставщика перчаток смотровых и хирургических нитриловых, перчаток...
+                    </div>
+                  </div>
+                </div>
+                <!--procur-categ-card-->
+              </div>
+              <!--usercab-buys-->
+
+
+
+              <div class="usercab-prods usercab-prods-3">
+                <div class="head-2">Мои услуги</div>
+                <a href="#" class="usercab-prods-butt butt">Добавить услуг</a>
+              </div>
+              <!--usercab-prods-->
+
+              <div class="usercab-servs">
+                <div class="procur-categ-card">
+                  <a class="product-similar-img-w noimage"><img src="img/Image.png"></a>
+                  <div class="procur-categ-info">
+                    <div class="product-similar-row product-similar-row-2">
+                      <a class="product-similar-txt-2">ExpertMD</a>
+                      <div class="product-similar-heart-w">
+                        <label class="productis-img-w-span">
+                          <input type="checkbox">
+                          <span></span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="nbuy-txt-row">
+                      <div class="nbuy-txt-2-w">
+                        <div class="nbuy-txt-2">
+                          Санкт-Петербург, Россия
+                        </div>
+                      </div>
+                      <div class="nbuy-txt-1-w">
+                      </div>
+                    </div>
+                    <a href="#" class="product-similar-cat">Прочие услуги</a>
+                    <div class="product-similar-txt-3">
+                      Мы готовы предоставить все виды поддержки и представительства Вашей компании в Молдове...
+                    </div>
+                  </div>
+                </div>
+                <!--this-->
+                <div class="procur-categ-card">
+                  <a class="product-similar-img-w noimage"><img src="img/Image.png"></a>
+                  <div class="procur-categ-info">
+                    <div class="product-similar-row product-similar-row-2">
+                      <a class="product-similar-txt-2">ExpertMD</a>
+                      <div class="product-similar-heart-w">
+                        <label class="productis-img-w-span">
+                          <input type="checkbox">
+                          <span></span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="nbuy-txt-row">
+                      <div class="nbuy-txt-2-w">
+                        <div class="nbuy-txt-2">
+                          Санкт-Петербург, Россия
+                        </div>
+                      </div>
+                      <div class="nbuy-txt-1-w">
+                      </div>
+                    </div>
+                    <a href="#" class="product-similar-cat">Прочие услуги</a>
+                    <div class="product-similar-txt-3">
+                      Мы готовы предоставить все виды поддержки...
+                    </div>
+                  </div>
+                </div>
+                <!--this-->
+                <div class="procur-categ-card">
+                  <a class="product-similar-img-w noimage"><img src="img/Image.png"></a>
+                  <div class="procur-categ-info">
+                    <div class="product-similar-row product-similar-row-2">
+                      <a class="product-similar-txt-2">ExpertMD</a>
+                      <div class="product-similar-heart-w">
+                        <label class="productis-img-w-span">
+                          <input type="checkbox">
+                          <span></span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="nbuy-txt-row">
+                      <div class="nbuy-txt-2-w">
+                        <div class="nbuy-txt-2">
+                          Санкт-Петербург, Россия
+                        </div>
+                      </div>
+                      <div class="nbuy-txt-1-w">
+                      </div>
+                    </div>
+                    <a href="#" class="product-similar-cat">Прочие услуги</a>
+                    <div class="product-similar-txt-3">
+                      Мы готовы предоставить все виды поддержки и представительства Вашей компании в Молдове...
+                    </div>
+                  </div>
+                </div>
+                <!--this-->
+              </div>
+              <!--usercab-buys-->
+
+              <div class="usercab-promos">
+                <div class="head-2">Акции от наших партнеров</div>
+              </div>
+              <!--usercab-promos-->
+
+              <div class="usercab-promos-w">
+
+
+                <div class="procur-categ-card promos-card">
+                  <a href="#" class="comp-card-img"><img src="img/elba.jpg"></a>
+                  <div class="procur-categ-info">
+                    <div class="product-similar-row">
+                      <a class="product-similar-txt-2">Лучшая бухгалтерия для малого бизнеса</a>
+                    </div>
+                    <div class="product-similar-txt-3">
+                      Онлайн-бухгалтерия для малого бизнеса где есть все необходимое: учет налогов, ведение документооборота, учет сотрудников, сдача отчетности онлайн. И все это в очень удобном интерфейсе. Налоги — это легко, если вы их доверите Эльбе.
+                    </div>
+                    <div class="promos-butt-w">
+                      <a href="#" class="promos-butt butt">Подключиться и получить 3 мес. бесплатно</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="procur-categ-card promos-card">
+                  <a href="#" class="comp-card-img"><img src="img/elba.jpg"></a>
+                  <div class="procur-categ-info">
+                    <div class="product-similar-row">
+                      <a class="product-similar-txt-2">Лучшая бухгалтерия для малого бизнеса</a>
+                    </div>
+                    <div class="product-similar-txt-3">
+                      Онлайн-бухгалтерия для малого бизнеса где есть все необходимое: учет налогов, ведение документооборота, учет сотрудников, сдача отчетности онлайн. И все это в очень удобном интерфейсе. Налоги — это легко, если вы их доверите Эльбе.
+                    </div>
+                    <div class="promos-butt-w">
+                      <a href="#" class="promos-butt butt">Подключиться и получить 3 мес. бесплатно</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="procur-categ-card promos-card">
+                  <a href="#" class="comp-card-img"><img src="img/elba.jpg"></a>
+                  <div class="procur-categ-info">
+                    <div class="product-similar-row">
+                      <a class="product-similar-txt-2">Лучшая бухгалтерия для малого бизнеса</a>
+                    </div>
+                    <div class="product-similar-txt-3">
+                      Онлайн-бухгалтерия для малого бизнеса где есть все необходимое: учет налогов, ведение документооборота, учет сотрудников, сдача отчетности онлайн. И все это в очень удобном интерфейсе. Налоги — это легко, если вы их доверите Эльбе.
+                    </div>
+                    <div class="promos-butt-w">
+                      <a href="#" class="promos-butt butt">Подключиться и получить 3 мес. бесплатно</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+
+            </div>
+            <!--col-l-->
+          </div>
+        </div>
+
+
+
+      </div>
+      <!--cont-->
+    </div>
+    <!--page-->
+
+        <div class="foot">
+      <div class="contain">
+        <div class="foot-w">
+          <div class="foot-row-1">
+            <div class="foot-col-1">
+              <a href="#" class="plogo">B2B каталог для производителей и закупщиков</a>
+              <div class="copy">© «Производитель.рф», 2021</div>
+            </div>
+            <ul class="foot-ul">
+              <li><a href="#">Производители</a></li>
+              <li><a href="#">Продукция</a></li>
+              <li><a href="#">Закупки</a></li>
+              <li><a href="#">Услуги</a></li>
+              <li><a href="#">Публикации</a></li>
+            </ul>
+            <ul class="foot-ul">
+              <li><a href="#">Добавить компанию</a></li>
+              <li><a href="#">Добавить закупку</a></li>
+              <li><a href="#">Добавить услугу</a></li>
+              <li><a href="#">Рубрикатор</a></li>
+              <li><a href="#">Все производители</a></li>
+            </ul>
+            <ul class="foot-ul">
+              <li><a href="#">О сайте</a></li>
+              <li><a href="#">Техническая поддержка</a></li>
+              <li><a href="#">Тарифы</a></li>
+              <li><a href="#">Правила сайта</a></li>
+            </ul>
+            <ul class="foot-ul">
+              <li><span class="foot-mnu-head">Статистика сайта:</span></li>
+              <li><a href="#">Производители: 13343</a></li>
+              <li><a href="#">Продукция: 13343</a></li>
+              <li><a href="#">Запросы: 13343</a></li>
+              <li><a href="#">Услуги: 1000</a></li>
+              <li><a href="#">Пользователи: 1000</a></li>
+            </ul>
+          </div>
+          <div class="foot-row-2">
+            <div class="foot-row-2-txt-1">Пользуясь данным сайтом, вы соглашаетесь с <a href="#">пользовательским соглашением</a> и <a href="#">политикой конфиденциальности</a></div>
+            <div class="foot-row-2-txt-2">Размещенные цены не являются публичной офертой</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="overlay"></div>
+  </div>
+  <!--wrapper-->
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/select2.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/common.js"></script>
+</body>
+
+</html>

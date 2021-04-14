@@ -44,7 +44,7 @@ $('.mnav-w .tabs_control_link').click(function (e) {
 
 });
 
-// $('.wrapper').prepend('<span class="eye-3"></span>');
+ $('.wrapper').prepend('<span class="eye-3"></span>');
 
 
 /**********/
@@ -200,7 +200,33 @@ $('.product-photo-mini').click(function (e) {
   let miniImgSrc = $(this).find('img').attr('src');
   prodImg.attr('src', miniImgSrc);
   prodImg.fadeIn(100);
-})
+});
+
+
+let regForm = document.querySelector('.reg-form'),
+checkinFormInputName = document.querySelector('.checkin-form-input-name'),
+checkinFormInputShort = document.querySelector('.checkin-form-input-short'),
+checkinFormInputDeal = document.querySelector('.checkin-form-input-deal'),
+headWievTit = document.querySelector('.head-wiev-tit'),
+checkBoxAll = document.querySelectorAll('.filter-reg-label input[type="checkbox"]');
+
+
+regForm.addEventListener('input', function () {
+  
+  if( checkinFormInputShort.value  != '') {
+    headWievTit.textContent = checkinFormInputShort.value + ' — ' + checkinFormInputDeal.value;
+  }
+  else {
+    headWievTit.textContent = checkinFormInputName.value + ' — ' + checkinFormInputDeal.value;
+  }
+
+});
+
+
+$('.filter-parent').click(function () {
+  $(this).toggleClass('on');
+  $(this).parent().find('> ul').toggleClass('on');
+});
 
 
 
@@ -222,6 +248,11 @@ for (let anchor of anchors) {
     })
   })
 }
+
+
+
+
+
 
 
 }); //ready

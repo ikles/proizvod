@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Регистрация (шаг 2)</title>  
+  <link rel="stylesheet" href="css/select2.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+  <div class="wrapper">    
+    @@include('var/_top-s.html')
+    <div class="reg2-page">
+      <div class="contain">
+        <div class="bread">          
+          <div class="bread-w">
+            <ul class="bread-ul">
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">Производители</a></li>
+              <li><a href="#">Авто</a></li>
+              <li><span>Автотовары</span></li>
+            </ul>
+          </div>          
+        </div><!--bread-->
+        <div class="step-1">
+          <div class="step-1-bord"></div>
+          <div class="step-1-txt">Шаг 2</div>
+          <div class="step-1-bord"></div>
+        </div>
+        <div class="columns reg1-columns">
+          <div class="column-r">
+           <div class="checkin-col-1">
+            <ul class="checkin-ul">
+              <li class="checkin-li"><a href="#" class="checkin-a-2 active">Регистрация</a></li>
+              <li class="checkin-li"><a href="#" class="checkin-a-2">Активация профиля</a></li>
+              <li class="checkin-li"><a href="#" class="checkin-a-2">Тарифы</a></li>
+            </ul>
+          </div>
+        </div><!--column-r-->
+        <div class="column-l">
+
+          <form class="reg-form">
+            <div class="checkin-form-w" placeholder="Интеграл плюс">
+              <div class="checkin-form-txt-w">
+                <h1>Добавление компании</h1>
+              </div>
+              <div class="checkin-form-pad">
+                <div class="checkin-txt-1">Название компании<span>*</span>:</div>
+                <input class="input checkin-form-input checkin-form-input-name" type="text" placeholder="Интеграл плюс" / required>
+                <div class="checkin-txt-lh">
+                  Укажите название вашей компании или бренда, без <br />
+                  организационно-правовой формы
+                </div>
+              </div>
+              <div class="checkin-form-2-w">
+                <div class="checkin-form-2">
+                  <div class="checkin-txt-1">Краткое наименование:</div>
+                  <input class="input checkin-form-input checkin-form-input-short" type="text" placeholder="Не указано" />
+                  <div class="checkin-txt-lh">
+                    Если есть короткая форма наименования или аббревиатуры, то впишите в <br />
+                    это поле, если нет, то можно оставить пустым
+                  </div>
+                </div>
+              </div>
+              <div class="checkin-form-pad">
+                <div class="checkin-txt-1">Род деятельности<span>*</span>:</div>
+                <input class="input checkin-form-input checkin-form-input-deal" type="text" placeholder="Не указано" / required>
+                <div class="checkin-txt-lh">
+                  Опишите в 2-3 слова род деятельности вашей компании для заголовка <br />
+                  страницы
+                </div>
+              </div>            
+              <div class="head-wiev">
+                <div class="checkin-txt-lh">Отображение заголовка в каталоге</div>
+                <div class="head-wiev-tit">
+                  Интеграл плюс
+                </div>
+              </div>
+
+              <div class="checkin-form-2-w">
+                <div class="checkin-form-2">
+                  <div class="checkin-txt-1">Описание:</div>                
+                  <textarea class="area checkin-form-area" placeholder="Не указано"></textarea>
+                  <div class="checkin-txt-lh">
+                    Это описание будет размещено в карточке компании. Для того чтобы страница заняла высокие позиции в поисковой выдаче рекомендуем написать 5-10 предложений о деятельности вашей компании и ключевых преимуществах
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="filter-reg">
+              <div class="checkin-form-txt">Выпускаемая продукция</div>
+              <div class="checkin-txt-lh">Выберите из списка выпускаемую продукцию:</div>
+              <div class="filter-reg-w">
+                <div class="filter-reg-form">                  
+                  <input class="input filter-reg-input" type="text" placeholder="Фильтр">
+                  <div class="filter-reg-desc">Выбрано 2 (макс. 20)</div>                  
+                </div><!--filter-reg-form-->                
+                <div class="filter-reg-values">
+                  <ul>
+                    <li>
+                      <a href="#" class="filter-parent">Одежда, обувь и акессуары</a>
+                      <ul class="filter-reg-ul-2">
+                        <li>
+                          <a href="#" class="filter-parent">Женская одежда и обувь</a>
+                          <ul class="filter-reg-ul-3">
+                            <li>
+                              <label class="filter-reg-label">                          
+                                <input type="checkbox">                          
+                                <span class="filter-reg-tit">Женская одежда 3 уровень</span>
+                              </label>
+                            </li>                        
+                            <li>
+                              <label class="filter-reg-label">                          
+                                <input type="checkbox">                          
+                                <span class="filter-reg-tit">Женская одежда 3 уровень</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label class="filter-reg-label">                          
+                                <input type="checkbox">                          
+                                <span class="filter-reg-tit">Женская одежда 3 уровень</span>
+                              </label>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <label class="filter-reg-label">                          
+                            <input type="checkbox">                          
+                            <span class="filter-reg-tit">Женская одежда 2 уровень</span>
+                          </label>
+                        </li>                        
+                        <li>
+                          <label class="filter-reg-label">                          
+                            <input type="checkbox">                          
+                            <span class="filter-reg-tit">Женская одежда 2 уровень</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="filter-reg-label">                          
+                            <input type="checkbox">                          
+                            <span class="filter-reg-tit">Женская одежда 2 уровень</span>
+                          </label>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <label class="filter-reg-label">                          
+                        <input type="checkbox">                          
+                        <span class="filter-reg-tit">Детская одежда и обувь</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="filter-reg-label">                          
+                        <input type="checkbox">                          
+                        <span class="filter-reg-tit">Спортивная одежда и обувь</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="filter-reg-label">                          
+                        <input type="checkbox">                          
+                        <span class="filter-reg-tit">Спец одежда и обувь</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="filter-reg-label">                          
+                        <input type="checkbox">                          
+                        <span class="filter-reg-tit">Галантерея и обувь</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div><!--filter-reg-values-->
+              </div>
+            </div>
+            <div class="checkin-btn-w">
+              <button class="checkin-btn butt">Далее</button>
+              <div class="consent-txt">Нажимая кнопку “Далее”, Вы соглашаетесь с<a class="consent-a">правилами нашего сайта</a></div>
+            </div>
+
+          </form>
+        </div><!--column-l-->
+      </div><!--columns-->
+    </div><!--cont-->
+  </div><!--page-->
+
+  @@include('var/_footer.html')
+</div><!--wrapper-->
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>
+
