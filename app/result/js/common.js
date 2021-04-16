@@ -13,6 +13,7 @@ jQuery(document).ready(function( $ ) {
       $(".top-mnu").fadeOut();
       $('.overlay').fadeOut();
     }
+    $('.filter-reg-values').removeClass('on');
   });
 
 //top-ul
@@ -25,7 +26,7 @@ jQuery(document).ready(function( $ ) {
 
 
 
-$(".top-mnu, .top-w").click(function (e) {
+$(".top-mnu, .top-w, .filter-reg-w").click(function (e) {
   e.stopPropagation();
 });
 
@@ -44,11 +45,11 @@ $('.mnav-w .tabs_control_link').click(function (e) {
 
 });
 
- $('.wrapper').prepend('<span class="eye-3"></span>');
+$('.wrapper').prepend('<span class="eye-3"></span>');
 
 
 /**********/
-/*let pg = parseInt(document.location.pathname.match(/\d+/))
+let pg = parseInt(document.location.pathname.match(/\d+/))
 $('body').addClass('active').css('background-image', "url('../img/"+pg+".jpg')");
 $('body:not(.active)').css('background-image', "unset");
 
@@ -59,7 +60,7 @@ $('.eye-3').click(function (e) {
   $('body.active').css('background-image', "url('../img/"+pg+".jpg')");
   $('body:not(.active)').css('background-image', "unset");
 
-});*/
+});
 /**********/
 
 
@@ -212,7 +213,7 @@ checkBoxAll = document.querySelectorAll('.filter-reg-label input[type="checkbox"
 
 
 regForm.addEventListener('input', function () {
-  
+
   if( checkinFormInputShort.value  != '') {
     headWievTit.textContent = checkinFormInputShort.value + ' — ' + checkinFormInputDeal.value;
   }
@@ -220,13 +221,50 @@ regForm.addEventListener('input', function () {
     headWievTit.textContent = checkinFormInputName.value + ' — ' + checkinFormInputDeal.value;
   }
 
+  let counSels = document.querySelectorAll(".filter-reg-values input[type='checkbox']:checked").length;
+
+
+
+
+
+  let counSelsTotal = document.querySelector('.filter-reg-desc span');
+  if ( +counSelsTotal.textContent <= 19 ) {
+    counSelsTotal.textContent = counSels;
+  } 
+  else {
+    alert('Невозможно выбрать больше 20 категорий');
+    return false;
+  } 
+
 });
+
+
+
+
+
+$(".filter-reg-values").mCustomScrollbar({
+  axis: "y",
+  theme: "dark-3",
+  mouseWheel: 1,
+  scrollInertia: '230'
+});
+
+
+$('.filter-reg-input').focus(function() {  
+  $('.filter-reg-values').addClass('on');
+});
+
+/*$('.filter-reg-input').blur(function() {  
+  $('.filter-reg-values').removeClass('on');
+});*/
+
 
 
 $('.filter-parent').click(function () {
   $(this).toggleClass('on');
   $(this).parent().find('> ul').toggleClass('on');
 });
+
 
 
 
@@ -252,7 +290,137 @@ for (let anchor of anchors) {
 
 
 
+let imgWrapper = document.querySelector('.img_wrapper');
+let imgWrapper2 = document.querySelector('.img_wrapper_2');
+let imgWrapper3 = document.querySelector('.img_wrapper_3');
+let fileMulti = document.querySelector('#fileMulti-1');
+let fileMulti2 = document.querySelector('#fileMulti-2');
+let fileMulti3 = document.querySelector('#fileMulti-3');
 
+
+function download(input) {
+  let file = input.files[0];
+  let reader = new FileReader();
+  reader.readAsDataURL(file);
+  $('.image-input-val-1').html(file.name);  
+  reader.onload = function () {
+    let img = document.createElement('img');
+    img.src = reader.result;    
+    let linkImg = document.createElement('span');
+    linkImg.classList.add('add-comp-col-1-l-img-w');
+    linkImg.appendChild(img);
+      //console.log(img);
+      imgWrapper.innerHTML = '';
+      imgWrapper.appendChild(linkImg);
+    //console.log(imgWrapper);
+    removeImg();
+  }
+}
+
+function download2(input) {
+  let file = input.files[0];
+  let reader = new FileReader();
+  reader.readAsDataURL(file);
+  reader.onload = function () {
+    let img = document.createElement('img');
+    img.src = reader.result;
+    let linkImgWrap = document.createElement('div');
+    let linkImg = document.createElement('span');
+    let inputImg = document.createElement('input');
+    inputImg.type = "text";
+    inputImg.placeholder = "Описание";
+    linkImgWrap.classList.add('add-comp-img-input-row');    
+    linkImg.classList.add('add-comp-col-1-l-img-w-2');
+    inputImg.classList.add('add-comp-input-img', 'input');    
+    linkImg.appendChild(img);
+    linkImgWrap.appendChild(linkImg);
+    linkImgWrap.appendChild(inputImg);    
+      //console.log(img);
+      imgWrapper2.appendChild(linkImgWrap);      
+    //console.log(imgWrapper);    
+    removeImg2();    
+  }
+}
+
+
+
+function download3(input) {
+  let file = input.files[0];
+  let reader = new FileReader();
+  reader.readAsDataURL(file);
+  fileSize = (file.size * 0.000001).toFixed(2);
+  $('.image-input-val-3').html(file.name);  
+  reader.onload = function () {
+    
+    let linkImg = document.createElement('span');
+    let linkI = document.createElement('i');
+    let linkSize = document.createElement('span');
+    let linkDel = document.createElement('a');
+    linkDel.href = "#";
+    linkI.innerHTML = file.name;
+    linkDel.innerHTML = 'Удалить';
+    linkSize.innerHTML = '('+fileSize+' MB)';
+    linkImg.classList.add('add-comp-col-1-l-img-w-3');    
+    linkImg.appendChild(linkI);
+    linkImg.appendChild(linkSize);
+    linkImg.appendChild(linkDel);
+      //console.log(img);      
+      imgWrapper3.appendChild(linkImg);
+    //console.log(imgWrapper);    
+    removeImg3();
+  }
+}
+
+
+if($('#fileMulti-1').length) {
+  fileMulti.addEventListener("change", function() {
+   download(this); 
+ });
+}
+
+
+if($('#fileMulti-2').length) {
+  fileMulti2.addEventListener("change", function() {
+   download2(this);  
+ });
+}
+
+
+if($('#fileMulti-3').length) {
+  fileMulti3.addEventListener("change", function() {
+   download3(this);  
+ });
+}
+
+
+function removeImg() {
+  $('.add-comp-col-1-l-img-w').click(function () {
+    this.remove();
+    $('.image-input-val-1').html('Не выбрано');
+  });  
+}
+
+function removeImg2() {
+  $('.add-comp-col-1-l-img-w-2').click(function () {
+    this.parentElement.remove();      
+  });  
+}
+
+function removeImg3() {
+  $('.add-comp-col-1-l-img-w-3 a').click(function (e) {
+    e.preventDefault();
+    this.parentElement.remove();  
+    $('.image-input-val-3').html('Не выбрано');    
+  });  
+}
+
+
+
+
+
+removeImg();
+removeImg2();
+removeImg3();
 
 
 }); //ready
