@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Регистрация (шаг 3)</title>  
+  <link rel="stylesheet" href="css/select2.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+  <div class="wrapper">    
+    @@include('var/_top-s.html')
+    <div class="reg1-page reg2-page reg3-page">
+      <div class="contain">
+        <div class="bread">          
+          <div class="bread-w">
+            <ul class="bread-ul">
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">Производители</a></li>
+              <li><a href="#">Авто</a></li>
+              <li><span>Автотовары</span></li>
+            </ul>
+          </div>          
+        </div><!--bread-->
+        <h1>Регистрация</h1>
+        <div class="step-1">
+          <div class="step-1-bord"></div>
+          <div class="step-1-txt">Шаг 3</div>
+          <div class="step-1-bord"></div>
+        </div>
+        <div class="columns reg1-columns">
+          <div class="column-r">
+           <div class="checkin-col-1">
+            <ul class="checkin-ul">
+              <li class="checkin-li"><a href="#" class="checkin-a-2 active">Регистрация</a></li>
+              <li class="checkin-li"><a href="#" class="checkin-a-2">Активация профиля</a></li>
+              <li class="checkin-li"><a href="#" class="checkin-a-2">Тарифы</a></li>
+            </ul>
+          </div>
+        </div><!--column-r-->
+        <div class="column-l">
+
+          <form class="reg-form" enctype="multipart/form-data">
+            <div class="checkin-form-w" placeholder="Интеграл плюс">
+              <div class="checkin-form-txt-w">
+                <div class="head-1">Добавление продукции</div>
+              </div>
+              <div class="chekin-info">
+                Вы можете пропустить этот шаг и добавить вашу продукцию позже
+              </div>
+              <div class="checkin-form-pad">
+                <div class="checkin-txt-1">Название продукта<span>*</span>:</div>
+                <input class="input checkin-form-input checkin-form-input-name" type="text" placeholder="Не указано" / required>
+                <div class="checkin-txt-lh">
+                  Укажите название вашего продукта
+                </div>
+              </div>
+
+              <div class="checkin-form-2-w">
+                <div class="checkin-form-2">
+                  <div class="checkin-txt-1">Описание продукта:</div>                
+                  <textarea class="area checkin-form-area-2" placeholder="Не указано"></textarea>
+                  <div class="checkin-txt-lh">
+                    Это описание будет размещено в карточке товара
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="checkin-contacts-row-2">
+
+
+
+
+
+
+
+             <div class="checkin-form-row checkin-form-row-2">
+              <div class="checkin-form">
+                <div class="checkin-txt-1">Цена<span>*</span>:</div>
+                <input class="checkin-form-input" type="text" placeholder="Не указано">
+                <div class="checkin-txt-2">
+                  Цена за одну единицу товара
+                </div>
+              </div>
+              <div class="checkin-form">
+                <div class="checkin-txt-1">Минимальный заказ<span>*</span>:</div>
+                <input class="checkin-form-input" type="text" placeholder="Не указано">
+                <div class="checkin-txt-2">
+                  Минимальный заказ, который может сделать клиент
+                </div>
+              </div>
+            </div><!--checkin-form-row-->
+          </div><!--checkin-contacts-row-->
+
+
+          <div class="checkin-chars-row">
+            <div class="checkin-form-txt">Характеристики</div>
+            <div class="checkin-txt-lh">
+              Здесь вы можете добавлять произвольные характеристики своего товара. <br> Они отобразятся в структурированной таблице.
+            </div>
+
+            <div class="checkin-chars-w">
+              <div class="checkin-chars-it">
+                <div class="checkin-chars-col-1">
+                  <div class="checkin-txt-1">Название:</div>
+                  <input class="checkin-form-input" type="text" placeholder="Не указано">
+                </div>
+                <div class="checkin-chars-col-2">
+                  <div class="checkin-txt-1">Характеристики:</div>
+                  <input class="checkin-form-input" type="text" placeholder="Не указано">
+                </div>
+                <div class="checkin-chars-col-3">
+                  <a href="#" class="checkin-chars-butt butt">Удалить</a>
+                </div>
+              </div><!--checkin-chars-it-->
+
+            </div><!--checkin-chars-w-->
+            <a href="#" class="checkin-chars-add-more butt">Добавить еще</a>
+          </div><!--checkin-chars-row-->
+
+
+          <div class="chekin-image-row chekin-image-row-gal-2">
+            <div class="checkin-form-txt">Фотогалерея</div>
+            <div class="checkin-txt-lh">
+              Выберите фотографии и добавьте описание
+            </div>
+
+
+            <div class="checkin-gal-2-row">
+              <div class="checkin-txt-1">Загрузить фотографии:</div>
+              <label>
+                <input size="40" accept=".jpg,.jpeg,.png" class="multi-file-input" type="file" id="fileMulti-4" aria-invalid="false">
+                <span class="checkin-input-l">
+                  <div class="image-input-val image-input-val-4">Не выбрано</div>
+                  <div class="checkin-txt-lh">
+                   Файл должен быть меньше 1 МБ. <br>
+                   Допустимые типы: jpg, jpeg, png
+                 </div>
+               </span>
+               <span class="add-comp-col-1-r-a butt">Загрузить</span>
+             </label>
+           </div><!--this-->
+
+           <div class="img_wrapper_4 add-comp-col-1-l-photo-w">
+            
+              <span class="add-comp-col-1-l-img-w-4">
+                <img src="img/mini-5.jpg" />
+              </span>               
+              <span class="add-comp-col-1-l-img-w-4">
+                <img src="img/mini-6.jpg" />
+              </span>               
+            
+          </div>
+
+        </div><!--chekin-image-row-->
+
+
+
+
+
+
+
+   <div class="add-late-w">
+     <a href="#" class="add-late-butt butt-w">Добавить позже</a>
+     <a href="#" class="next-late-butt butt">Далее</a>
+   </div><!--add-late-w-->
+
+
+
+
+
+        <div class="checkin-btn-w-2">          
+          <div class="consent-txt">Нажимая кнопку “Далее”, Вы соглашаетесь с<a class="consent-a">правилами нашего сайта</a></div>
+        </div>
+      </form>
+    </div><!--column-l-->
+  </div><!--columns-->
+</div><!--cont-->
+</div><!--page-->
+
+@@include('var/_footer.html')
+</div><!--wrapper-->
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>
+

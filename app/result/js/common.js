@@ -45,10 +45,10 @@ $('.mnav-w .tabs_control_link').click(function (e) {
 
 });
 
-$('.wrapper').prepend('<span class="eye-3"></span>');
-
 
 /**********/
+
+$('.wrapper').prepend('<span class="eye-3"></span>');
 let pg = parseInt(document.location.pathname.match(/\d+/))
 $('body').addClass('active').css('background-image', "url('../img/"+pg+".jpg')");
 $('body:not(.active)').css('background-image', "unset");
@@ -61,6 +61,7 @@ $('.eye-3').click(function (e) {
   $('body:not(.active)').css('background-image', "unset");
 
 });
+
 /**********/
 
 
@@ -68,7 +69,7 @@ $('select').select2({
   minimumResultsForSearch: -1
 });
 
-/*$('.mnav-sel').on('select2:select', function (e) {
+$('.mnav-sel').on('select2:select', function (e) {
   if ( e.params.data.id == 'По рубрикам' ) {
     $('.mnav-links-w').removeClass('active');
     $('.mnav-links-w-1').addClass('active');
@@ -77,7 +78,7 @@ $('select').select2({
     $('.mnav-links-w').removeClass('active');
     $('.mnav-links-w-2').addClass('active');
   }
-});*/
+});
 
 $('.comp-more').click(function (e) {
   e.preventDefault();
@@ -293,9 +294,11 @@ for (let anchor of anchors) {
 let imgWrapper = document.querySelector('.img_wrapper');
 let imgWrapper2 = document.querySelector('.img_wrapper_2');
 let imgWrapper3 = document.querySelector('.img_wrapper_3');
+let imgWrapper4 = document.querySelector('.img_wrapper_4');
 let fileMulti = document.querySelector('#fileMulti-1');
 let fileMulti2 = document.querySelector('#fileMulti-2');
 let fileMulti3 = document.querySelector('#fileMulti-3');
+let fileMulti4 = document.querySelector('#fileMulti-4');
 
 
 function download(input) {
@@ -351,7 +354,7 @@ function download3(input) {
   fileSize = (file.size * 0.000001).toFixed(2);
   $('.image-input-val-3').html(file.name);  
   reader.onload = function () {
-    
+
     let linkImg = document.createElement('span');
     let linkI = document.createElement('i');
     let linkSize = document.createElement('span');
@@ -368,6 +371,25 @@ function download3(input) {
       imgWrapper3.appendChild(linkImg);
     //console.log(imgWrapper);    
     removeImg3();
+  }
+}
+
+
+function download4(input) {
+  let file = input.files[0];
+  let reader = new FileReader();
+  reader.readAsDataURL(file);
+  $('.image-input-val-4').html(file.name);  
+  reader.onload = function () {
+    let img = document.createElement('img');
+    img.src = reader.result;    
+    let linkImg = document.createElement('span');
+    linkImg.classList.add('add-comp-col-1-l-img-w-4');
+    linkImg.appendChild(img);
+      //console.log(img);      
+      imgWrapper4.appendChild(linkImg);
+    //console.log(imgWrapper);
+    removeImg4();
   }
 }
 
@@ -389,6 +411,12 @@ if($('#fileMulti-2').length) {
 if($('#fileMulti-3').length) {
   fileMulti3.addEventListener("change", function() {
    download3(this);  
+ });
+}
+
+if($('#fileMulti-4').length) {
+  fileMulti4.addEventListener("change", function() {
+   download4(this);  
  });
 }
 
@@ -414,13 +442,51 @@ function removeImg3() {
   });  
 }
 
-
-
-
+function removeImg4() {
+  $('.add-comp-col-1-l-img-w-4').click(function (e) {
+    e.preventDefault();
+    this.remove();  
+    $('.image-input-val-4').html('Не выбрано');    
+  });  
+}
 
 removeImg();
 removeImg2();
 removeImg3();
+removeImg4();
+
+
+
+
+$('.checkin-chars-add-more').click(function (e) {
+  e.preventDefault();
+  $('.checkin-chars-w').append(`
+    <div class="checkin-chars-it">
+    <div class="checkin-chars-col-1">
+    <div class="checkin-txt-1">Название:</div>
+    <input class="checkin-form-input" type="text" placeholder="Не указано">
+    </div>
+    <div class="checkin-chars-col-2">
+    <div class="checkin-txt-1">Характеристики:</div>
+    <input class="checkin-form-input" type="text" placeholder="Не указано">
+    </div>
+    <div class="checkin-chars-col-3">
+    <a href="#" class="checkin-chars-butt butt">Удалить</a>
+    </div>
+    </div>
+    `);
+  charsRemove()
+});
+
+function charsRemove() {
+  $('.checkin-chars-butt').click(function (e) {
+    e.preventDefault();
+    $(this).parent().parent().remove();
+  });  
+}
+
+charsRemove();
+
 
 
 }); //ready

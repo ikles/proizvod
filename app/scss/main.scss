@@ -5124,7 +5124,7 @@ textarea.area {
   padding: 14px 32px 33px;
   margin-top: 48px;
   .checkin-txt-lh {
-    
+
   }
 }
 
@@ -5197,7 +5197,7 @@ textarea.area {
   width: 100%;
   border: 1px solid rgba(133, 143, 164, 0.2);    
   height: 600px;
-  display: none;
+  display: none;  
   &.on {
     display: block;
   }
@@ -5257,7 +5257,8 @@ textarea.area {
 }
 
 .add-comp-col-1-l-img-w,
-.add-comp-col-1-l-img-w-2 {
+.add-comp-col-1-l-img-w-2,
+.add-comp-col-1-l-img-w-4 {
   display: block;
   border-radius: 5px;  
   overflow: hidden;
@@ -5305,7 +5306,7 @@ textarea.area {
 }
 
 .chekin-image-row-gal {
-  
+
 }
 
 .mCS-dark-3.mCSB_scrollTools .mCSB_draggerRail {
@@ -5427,6 +5428,115 @@ a.filter-parent {
 
 .checkin-form-row-2 {
   margin-top: 48px;
+}
+
+.files-row {
+  margin-top: 74px;
+  .chekin-image-row {
+    margin-top: 49px;
+  }
+}
+
+.img_wrapper_3 {
+  margin-top: 51px;
+}
+
+.checkin-contacts-row {
+  margin-bottom: 66px;
+  .checkin-form-row-2{
+    margin-top: 45px;
+    margin-bottom: 47px;
+  } 
+}
+
+.chekin-info {
+  font-size: 17px;
+  color: #14121F;
+  padding: 24px;
+  width: 100%;
+  background: #F8F9FA;
+  border-radius: 10px;
+  margin-bottom: 48px;
+  margin-top: -25px;
+}
+
+
+.checkin-contacts-row-2 {
+  margin-top: 0;
+}
+
+.checkin-form-area-2 {
+ height: 100px; 
+
+}
+
+.checkin-chars-w {
+  margin-top: 48px;
+}
+
+.checkin-chars-it {
+  display: flex;
+  justify-content: space-between;          
+  align-items: flex-end;
+  margin-top: 24px;
+}
+
+.checkin-chars-col-1,
+.checkin-chars-col-2 {
+  width: 262px;
+}
+.checkin-chars-col-3 {
+  width: 165px;
+}
+
+.checkin-chars-butt {
+  width: 100%;
+}
+
+.checkin-chars-add-more {
+  margin-top: 48px;
+  padding: 0 24px;
+}
+
+.checkin-gal-2-row {
+  margin-top: 48px;
+}
+
+.img_wrapper_4 {
+  display: flex;
+  span {
+    margin-right: 30px;
+  }
+}
+
+.add-late-w {
+  display: flex;
+}
+.add-late-butt {
+  margin-right: 30px;
+  border: 1px solid rgba(183, 188, 198, 0.2);
+  color: #14121F;
+  padding: 0 65px;
+}
+.next-late-butt {
+  padding: 0 57px;
+}
+
+
+.checkin-btn-w-2 {
+  margin-top: 24px;
+}
+
+.checkin-chars-row {
+  margin-top: -10px;
+}
+
+.chekin-image-row-gal-2 {
+  margin-top: 68px;
+}
+
+.mt0 {
+  margin-top: 0 !important;
 }
 
 @import "_mnu.scss";
