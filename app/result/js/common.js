@@ -48,7 +48,7 @@ $('.mnav-w .tabs_control_link').click(function (e) {
 
 /**********/
 
-$('.wrapper').prepend('<span class="eye-3"></span>');
+/*$('.wrapper').prepend('<span class="eye-3"></span>');
 let pg = parseInt(document.location.pathname.match(/\d+/))
 $('body').addClass('active').css('background-image', "url('../img/"+pg+".jpg')");
 $('body:not(.active)').css('background-image', "unset");
@@ -60,7 +60,7 @@ $('.eye-3').click(function (e) {
   $('body.active').css('background-image', "url('../img/"+pg+".jpg')");
   $('body:not(.active)').css('background-image', "unset");
 
-});
+});*/
 
 /**********/
 
@@ -213,42 +213,80 @@ headWievTit = document.querySelector('.head-wiev-tit'),
 checkBoxAll = document.querySelectorAll('.filter-reg-label input[type="checkbox"]');
 
 
-regForm.addEventListener('input', function () {
+if ($('.reg-form').length) {
 
-  if( checkinFormInputShort.value  != '') {
-    headWievTit.textContent = checkinFormInputShort.value + ' — ' + checkinFormInputDeal.value;
+  regForm.addEventListener('input', function () {
+
+    if( checkinFormInputShort.value  != '') {
+      headWievTit.textContent = checkinFormInputShort.value + ' — ' + checkinFormInputDeal.value;
+    }
+    else {
+      headWievTit.textContent = checkinFormInputName.value + ' — ' + checkinFormInputDeal.value;
+    }
+
+    let counSels = document.querySelectorAll(".filter-reg-values input[type='checkbox']:checked").length;
+
+
+
+
+
+    let counSelsTotal = document.querySelector('.filter-reg-desc span');
+    if ( +counSelsTotal.textContent <= 19 ) {
+      counSelsTotal.textContent = counSels;
+    } 
+    else {
+      alert('Невозможно выбрать больше 20 категорий');
+      return false;
+    } 
+
+  });
+
+}
+
+if ($(".filter-reg-values").length) {
+
+  $(".filter-reg-values").mCustomScrollbar({
+    axis: "y",
+    theme: "dark-3",
+    mouseWheel: 1,
+    scrollInertia: '230'
+  });
+}
+
+
+/*if ($(".mess-table-w").length) {
+
+
+  if( $(window).width() < 641 ) {
+    $(".mess-table-w").mCustomScrollbar({
+      axis: "x",
+      theme: "dark-3",
+      mouseWheel: 1,
+      scrollInertia: '230'
+    });    
   }
-  else {
-    headWievTit.textContent = checkinFormInputName.value + ' — ' + checkinFormInputDeal.value;
-  }
-
-  let counSels = document.querySelectorAll(".filter-reg-values input[type='checkbox']:checked").length;
 
 
+  $(window).resize(function() {
+    if( $(window).width() > 640 ) {
+      $(".mess-table-w").mCustomScrollbar("destroy");
+    }
+  });
+
+  $(window).resize(function() {
+    if( $(window).width() < 641 ) {
+      $(".mess-table-w").mCustomScrollbar({
+        axis: "x",
+        theme: "dark-3",
+        mouseWheel: 1,
+        scrollInertia: '230'
+      });  
+    }
+  });
 
 
+} //here*/
 
-  let counSelsTotal = document.querySelector('.filter-reg-desc span');
-  if ( +counSelsTotal.textContent <= 19 ) {
-    counSelsTotal.textContent = counSels;
-  } 
-  else {
-    alert('Невозможно выбрать больше 20 категорий');
-    return false;
-  } 
-
-});
-
-
-
-
-
-$(".filter-reg-values").mCustomScrollbar({
-  axis: "y",
-  theme: "dark-3",
-  mouseWheel: 1,
-  scrollInertia: '230'
-});
 
 
 $('.filter-reg-input').focus(function() {  
