@@ -6020,8 +6020,7 @@ table {
 .about-w {
 }
 
-.about-ab {
-  padding-top: 60px;
+.about-ab {  
   padding-bottom: 48px;
   border-bottom: 1px solid rgba(#B7BCC6, 0.5);
 }
@@ -6078,10 +6077,13 @@ table {
 }
 
 .about-answ {
+  .head-2 {
+    font-size: 34px;
+  }
 }
 
 .about-answ-w {
-  margin-top: 70px;
+  margin-top: 73px;
   padding-bottom: 24px;
 }
 
@@ -6089,9 +6091,9 @@ table {
 }
 
 .about-q {
-  padding-bottom: 24px;
+  padding-bottom: 30px;
   border-bottom: 1px solid rgba(183, 188, 198, 0.5);
-  margin-bottom: 24px;
+  margin-bottom: 28px;
 }
 
 .about-q-row {
@@ -6100,7 +6102,7 @@ table {
 }
 
 .about-q-txt-1 {
-  font-size: 20px;
+  font-size: 21px;
   color: #000000;
 }
 
@@ -6111,19 +6113,24 @@ table {
 }
 
 .about-q-txt-2 {
-  font-size: 16px;
-  line-height: 1.8;
+  font-size: 18px;
+  line-height: 1.65;
   color: rgb(0, 0, 0);
-  width: 800px;
-  margin-top: 24px;
+  max-width: 800px !important;
+  margin-top: 27px;
+  margin-bottom: -5px;
 }
 
 .bal-repl {
-  padding-top: 100px;
+  padding-top: 45px;
   padding-bottom: 100px;
+  .head-2 {
+    font-size: 34px;
+  }
 }
 
 .bal-repl-w {
+  margin-top: 71px;
 }
 
 .bal-repl-form {
