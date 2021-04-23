@@ -5,7 +5,7 @@
   <!--meta name="viewport" content="width=1200px"-->
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Регистрация (шаг 2)</title>  
+  <title>Настройки профиля</title>  
   <link rel="stylesheet" href="css/select2.min.css">
   <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
@@ -69,7 +69,7 @@
         </div>
       </div>
     </div>
-    <div class="reg1-page reg2-page">
+    <div class="reg1-page profile-page">
       <div class="contain">
         <div class="bread">          
           <div class="bread-w">
@@ -80,77 +80,105 @@
               <li><span>Автотовары</span></li>
             </ul>
           </div>          
-        </div><!--bread-->
-        <h1>Регистрация</h1>
-        <div class="step-1">
-          <div class="step-1-bord"></div>
-          <div class="step-1-txt">Шаг 2</div>
-          <div class="step-1-bord"></div>
-        </div>
-        <div class="columns reg1-columns">
+        </div><!--bread-->        
+        <div class="columns reg1-columns profile-columns">
           <div class="column-r">
-           <div class="checkin-col-1">
-            <ul class="checkin-ul">
-              <li class="checkin-li"><a href="#" class="checkin-a-2 active">Регистрация</a></li>
-              <li class="checkin-li"><a href="#" class="checkin-a-2">Активация профиля</a></li>
-              <li class="checkin-li"><a href="#" class="checkin-a-2">Тарифы</a></li>
+            <div class="throw-mon">
+              <div class="throw-mon-txt-1">Баланс: 0 рублей</div>
+              <button class="throw-mon-btn butt">Пополнить счет</button>
+              <a href="#" class="throw-mon-a">Движение средств</a>
+            </div>
+            <ul class="pers-area-ul">
+              <li><a href="#">Дашборд</a></li>
+              <li><a href="#">Моя компания</a></li>
+              <li><a href="#">Моя продукция</a></li>
+              <li><a href="#">Лента закупок</a></li>
+              <li><a href="#">Заказы и сообщения</a></li>
+              <li><a href="#">Техническая поддержка</a></li>
+              <li><a href="#">Отзывы</a></li>
+              <li><a href="#">Статистика</a></li>
+              <li><a href="#">Настройки профиля</a></li>
             </ul>
           </div>
-        </div><!--column-r-->
-        <div class="column-l">
+          <div class="column-l">
 
-          <form class="reg-form" enctype="multipart/form-data">
-            <div class="checkin-form-w" placeholder="Интеграл плюс">
-              <div class="checkin-form-txt-w">
-                <div class="head-1">Добавление компании</div>
-              </div>
-              <div class="checkin-form-pad">
-                <div class="checkin-txt-1">Название компании<span>*</span>:</div>
-                <input class="input checkin-form-input checkin-form-input-name" type="text" placeholder="Интеграл плюс" / required>
-                <div class="checkin-txt-lh">
-                  Укажите название вашей компании или бренда, без <br />
-                  организационно-правовой формы
-                </div>
-              </div>
-              <div class="checkin-form-2-w">
-                <div class="checkin-form-2">
-                  <div class="checkin-txt-1">Краткое наименование:</div>
-                  <input class="input checkin-form-input checkin-form-input-short" type="text" placeholder="Не указано" />
-                  <div class="checkin-txt-lh">
-                    Если есть короткая форма наименования или аббревиатуры, то впишите в <br />
-                    это поле, если нет, то можно оставить пустым
-                  </div>
-                </div>
-              </div>
-              <div class="checkin-form-pad">
-                <div class="checkin-txt-1">Род деятельности<span>*</span>:</div>
-                <input class="input checkin-form-input checkin-form-input-deal" type="text" placeholder="Не указано" / required>
-                <div class="checkin-txt-lh">
-                  Опишите в 2-3 слова род деятельности вашей компании для заголовка <br />
-                  страницы
-                </div>
-              </div>            
-              <div class="head-wiev">
-                <div class="checkin-txt-lh">Отображение заголовка в каталоге</div>
-                <div class="head-wiev-tit">
-                  Интеграл плюс
-                </div>
-              </div>
+            <form class="reg-form">
 
-              <div class="checkin-form-2-w">
-                <div class="checkin-form-2">
-                  <div class="checkin-txt-1">Описание:</div>                
-                  <textarea class="area checkin-form-area" placeholder="Не указано"></textarea>
-                  <div class="checkin-txt-lh">
-                    Это описание будет размещено в карточке компании. Для того чтобы <br> страница заняла высокие позиции в поисковой выдаче рекомендуем <br> написать 5-10 предложений о деятельности вашей компании и ключевых <br> преимуществах
+
+              <div class="checkin-contacts-row">
+
+                <div class="checkin-form-txt">Настройки профиля</div>
+                
+
+                <div class="checkin-form-row checkin-form-row-2 checkin-form-name">
+                  <div class="checkin-form">
+                    <div class="checkin-txt-1">Имя:</div>
+                    <input class="checkin-form-input" type="text" placeholder="Андрей">
+
                   </div>
-                </div>
-              </div>
-            </div>
-            <div class="filter-reg">
-              <div class="checkin-form-txt">Выпускаемая продукция</div>
-              <div class="checkin-txt-lh">Выберите из списка выпускаемую продукцию:</div>
-          <div class="filter-reg-w">
+                  <div class="checkin-form">
+                    <div class="checkin-txt-1">Фамилия:</div>
+                    <input class="checkin-form-input" type="text" placeholder="Егорин">
+
+                  </div>
+                </div><!--checkin-form-row-->
+
+                <div class="checkin-form-row checkin-form-row-2 checkin-form-phone">
+                  <div class="checkin-form">
+                    <div class="checkin-txt-1">Телефон:</div>
+                    <input class="checkin-form-input" type="text" placeholder="Не указано">
+                    <div class="checkin-txt-2">
+
+                    </div>
+                  </div>
+                  <div class="checkin-form">
+                    <div class="checkin-txt-1">E-mail:</div>
+                    <input class="checkin-form-input" type="text" placeholder="Не указано">
+                    <div class="checkin-txt-2">
+                      Не публикуется
+                    </div>
+                  </div>
+                </div><!--checkin-form-row-->
+
+
+
+                <div class="checkin-form-row checkin-form-row-2 checkin-form-pass">
+                  <div class="checkin-form">
+                    <div class="checkin-txt-1">Пароль:</div>
+                    <input class="checkin-form-input" type="password" placeholder="*******">
+                    <div class="checkin-txt-2">
+                      Из более чем 8 символов, содержащий латинские буквы и цифры
+                    </div>
+                  </div>
+                  <div class="checkin-form">
+                    <div class="checkin-txt-1">Повторите пароль:</div>
+                    <input class="checkin-form-input" type="password" placeholder="*******">
+                    <div class="checkin-txt-2">
+                      Повторите введенный пароль, чтобы не ошибиться                      
+                    </div>
+                  </div>
+                </div><!--checkin-form-row-->
+
+
+              </div><!--checkin-contacts-row-->
+
+
+              <div class="checkin-form-txt">Настройка ленты закупок</div>
+
+
+
+
+              <div class="line-sel-w">
+                <div class="repl-bal-txt-1">Страна:</div>
+                <select class="mnav-sel">                
+                  <option value="2 месяца">Россия</option>                    
+                  <option value="2 месяца">Украина</option>                    
+                </select>
+              </div><!--chart-sel-w-->
+
+
+
+              <div class="filter-reg-w">
   <div class="filter-reg-form">                  
     <input class="input filter-reg-input" type="text" placeholder="Фильтр">
     <div class="filter-reg-desc">Выбрано <span>0</span> (макс. 20)</div>                  
@@ -388,221 +416,108 @@
     </ul>
   </div><!--filter-reg-values-->
 </div>
+
+              <div class="line-checks-w">
+                <label class="manufacturers-label-checked">
+                  <input class="label-checkbox" type="checkbox" checked />
+                  <span class="manufacturers-span-checked"></span>
+                  <span class="manufacturers-label-span-txt">
+                    Важные сообщения от администрации
+                  </span>
+                </label>
+                <label class="manufacturers-label-checked">
+                  <input class="label-checkbox" type="checkbox" />
+                  <span class="manufacturers-span-checked"></span>
+                  <span class="manufacturers-label-span-txt">
+                    Заказы товаров
+                  </span>
+                </label>
+                <label class="manufacturers-label-checked">
+                  <input class="label-checkbox" type="checkbox" />
+                  <span class="manufacturers-span-checked"></span>
+                  <span class="manufacturers-label-span-txt">
+                    Новые отзывы
+                  </span>
+                </label>
+              </div>
+
+              <div class="checkin-form-txt">Бейджик Производитель.рф</div>
+
+
+
+
+
+              <div class="bage-w">
+
+                <ul class="tabs-control">
+                  <li class="tabs_control_item active">
+                    <a href="#" class="tabs_control_link">
+                      <span class="bage-img-w"><img src="img/bage-1.png" alt=""></span>
+                      <span class="bage-radio"></span>
+                    </a>
+                  </li>
+                  <li class="tabs_control_item">
+                    <a href="#" class="tabs_control_link">
+                      <span class="bage-img-w"><img src="img/bage-2.png" alt=""></span>
+                      <span class="bage-radio"></span>          
+                    </a>
+                  </li>
+                  <li class="tabs_control_item">
+                    <a href="#" class="tabs_control_link">
+                      <span class="bage-img-w"><img src="img/bage-3.png" alt=""></span>
+                      <span class="bage-radio"></span>
+                    </a>
+                  </li>
+                  <li class="tabs_control_item">
+                    <a href="#" class="tabs_control_link">
+                      <span class="bage-img-w"><img src="img/bage-4.png" alt=""></span>
+                      <span class="bage-radio"></span>
+                    </a>
+                  </li>
+                </ul>
+
+                <ul class="tabs_content">
+                  <li class="tabs_content_item active">                 
+                    <textarea><a href="https://производители.рф/" target="_blank"><img src="//производители.рф/counters/seostop.ru" width="88" height="31" alt="логотип - Производители.рф"></a></textarea>
+                  </li>                    
+                </li>
+                <li class="tabs_content_item">                          
+                  <textarea><a href="https://производители.рф/" target="_blank"><img src="//производители.рф/counters/seostop.ru/1" width="88" height="31" alt="логотип - Производители.рф"></a></textarea>
+                </li>
+                <li class="tabs_content_item">                            
+                  <textarea><a href="https://производители.рф/" target="_blank"><img src="//производители.рф/counters/seostop.ru/10" width="88" height="31" alt="логотип - Производители.рф"></a></textarea>
+                </li>
+                <li class="tabs_content_item">                            
+                  <textarea><a href="https://производители.рф/" target="_blank"><img src="//производители.рф/counters/seostop.ru/2" width="88" height="31" alt="логотип - Производители.рф"></a></textarea>
+                </li>
+              </ul>
+
             </div>
 
-            <div class="checkin-form-txt">Логотип компании</div>
 
+            <div class="bage-conf-w">
 
-            <div class="chekin-image-row">
-              <div class="checkin-txt-1">Загрузить логотип:</div>              
-              <label>
-                <input size="40" accept=".jpg,.jpeg,.png" class="multi-file-input" type="file" id="fileMulti-1" aria-invalid="false">
-                <span class="checkin-input-l">
-                  <div class="image-input-val image-input-val-1">logo1.png</div>
-                  <div class="checkin-txt-lh">
-                   Файл должен быть меньше 1 МБ. <br>
-                   Допустимые типы: jpg, jpeg, png
-                 </div>
-               </span>
-               <span class="add-comp-col-1-r-a butt">Загрузить</span>
-             </label>
+             <label class="manufacturers-label-checked">
+              <input class="label-checkbox" type="checkbox" />
+              <span class="manufacturers-span-checked"></span>
+              <span class="manufacturers-label-span-txt">
+                Я разместил логотип "Производитель.рф" на свой сайт
+              </span>
+            </label>
+
+            <a href="#">Что дает размещение логотипа?</a>
+
+          </div><!--bage-conf-w-->
 
 
 
-             <div class="img_wrapper add-comp-col-1-l-photo-w">
-              <span class="add-comp-col-1-l-img-w">
-                <img src="img/mini-1.jpg" />
-              </span>              
-            </div>
-          </div><!--chekin-image-row-->
-
-          <div class="checkin-form-txt">Фотогалерея</div>
-          <div class="checkin-txt-lh">Выберите фотографии и добавьте описание</div>
-          <div class="chekin-image-row chekin-image-row-gal">
-
-            <div class="checkin-txt-1">Загрузить фотографии:</div>
-            <label>
-              <input size="40" accept=".jpg,.jpeg,.png" class="multi-file-input" type="file" id="fileMulti-2" aria-invalid="false">
-              <span class="checkin-input-l">
-                <div class="image-input-val image-input-val-2">Не выбрано</div>
-                <div class="checkin-txt-lh">
-                 Файл должен быть меньше 1 МБ. <br>
-                 Допустимые типы: jpg, jpeg, png
-               </div>
-             </span>
-             <span class="add-comp-col-1-r-a butt">Загрузить</span>
-           </label>
-
-
-           <div class="img_wrapper_2 add-comp-col-1-l-photo-w">
-            <div class="add-comp-img-input-row">
-              <span class="add-comp-col-1-l-img-w-2">
-                <img src="img/mini-2.jpg" />
-              </span> 
-              <input type="text" placeholder="Описание" class="add-comp-input-img input">             
-            </div><!--row-->
-            <div class="add-comp-img-input-row">
-              <span class="add-comp-col-1-l-img-w-2">
-                <img src="img/mini-3.jpg" />
-              </span> 
-              <input type="text" placeholder="Описание" class="add-comp-input-img input">             
-            </div><!--row-->
+          <div class="checkin-btn-w">
+            <button class="bage-btn butt">Сохранить</button>                
           </div>
-
-        </div><!--chekin-image-row-->
-
-
-<div class="files-row">
-        <div class="checkin-form-txt">Файлы и документы</div>
-        <div class="checkin-txt-lh">Можете приложить каталоги, прайс-листы и прочие материалы</div>
-        <div class="chekin-image-row">
-
-
-          <div class="checkin-txt-1">Загрузить файлы:</div>
-          <label>
-            <input size="40" accept=".pdf,.xls,.doc,.xlsx,.jpg,.jpeg,.png" class="multi-file-input" type="file" id="fileMulti-3" aria-invalid="false">
-            <span class="checkin-input-l">
-              <div class="image-input-val image-input-val-3">Каталог_продукции.xlsx</div>
-              <div class="checkin-txt-lh">
-               Допустимые форматы: PDF, XLS, DOC, XLSX, DOCX, JPG и PNG
-             </div>
-           </span>
-           <span class="add-comp-col-1-r-a butt">Загрузить</span>
-         </label>
-
-
-         <div class="img_wrapper_3 add-comp-col-1-l-photo-w">          
-          <span class="add-comp-col-1-l-img-w-3">
-            <i>Каталог продукции.xlsx</i><span>(3MB)</span><a href="#">Удалить</a>
-          </span>          
-        </div>
-
-
-      </div><!--chekin-image-row-->
-    </div><!--files-row-->
-
-<div class="checkin-contacts-row">
-
-      <div class="checkin-form-txt">Контакты</div>
-      <div class="checkin-txt-lh">Публичные данные для отображения на сайте</div>
-
-      <div class="checkin-form-row checkin-form-row-2">
-        <div class="checkin-form-2">
-          <div class="checkin-txt-1">Город<span class="checkin-txt-1-span">*</span>:</div>
-          <input class="checkin-form-input" type="text" placeholder="Не указано">
-          <div class="checkin-txt-2">
-            Начните вводить название населенного пункта и выберите из <br> выпадающего списка. Если вашего населенного пункт нет, то выберите <br> ближайший город по крупнее
-          </div>
-        </div>
-      </div>
-
-      <div class="checkin-form-row checkin-form-row-2">
-        <div class="checkin-form-2">
-          <div class="checkin-txt-1">Адрес<span class="checkin-txt-1-span">*</span>:</div>
-          <input class="checkin-form-input" type="text" placeholder="Не указано">
-          <div class="checkin-txt-2">
-           Введите адрес основного производства
-         </div>
-       </div>
-     </div>
-
-     <div class="checkin-form-row checkin-form-row-2">
-      <div class="checkin-form">
-        <div class="checkin-txt-1">Телефон<span>*</span>:</div>
-        <input class="checkin-form-input" type="text" placeholder="Не указано">
-        <div class="checkin-txt-2">
-          Введите основной телефон. Также можете добавить другие номера с указанием отделов через разделитель “/”
-        </div>
-      </div>
-      <div class="checkin-form">
-        <div class="checkin-txt-1">E-mail<span>*</span>:</div>
-        <input class="checkin-form-input" type="text" placeholder="Не указано">
-        <div class="checkin-txt-2">
-          Основной e-mail. Также можете добавить другие адреса с указанием отделов через разделитель “/”
-        </div>
-      </div>
-    </div><!--checkin-form-row-->
-
-    <div class="checkin-form-row checkin-form-row-2">
-      <div class="checkin-form-2">
-        <div class="checkin-txt-1">Сайт:</div>
-        <input class="checkin-form-input" type="text" placeholder="Не указано">
-        <div class="checkin-txt-2">
-          Ваш официальный сайт компании
-        </div>
-      </div>
-    </div>
-  </div><!--checkin-contacts-row-->
-
-
-    <div class="checkin-form-txt">Данные об организации</div>
-    <div class="checkin-txt-lh">
-      Если у вас нет юридического лица, статуса ИП или самозанятости, то, к сожалению, вы не сможете продавать через наш сайт.
-    </div>
-
-
-
-    <div class="checkin-form-row checkin-form-row-2">
-      <div class="checkin-form">
-        <div class="checkin-txt-1">Численность сотрудников<span>*</span>:</div>
-        <input class="checkin-form-input" type="text" placeholder="Не указано">
-        <div class="checkin-txt-2">
-          Количество сотрудников в компании
-        </div>
-      </div>
-      <div class="checkin-form">
-        <div class="checkin-txt-1">Дата основания компании<span>*</span>:</div>
-        <input class="checkin-form-input" type="text" placeholder="Не указано">
-        <div class="checkin-txt-2">
-          Дата регистрации юридического лица или получение статуса ИП (самозанятость)
-        </div>
-      </div>
-    </div>
-
-
-    <div class="checkin-form-row checkin-form-row-2">
-      <div class="checkin-form-2">
-        <div class="checkin-txt-1">Название юр лица<span class="checkin-txt-1-span">*</span>:</div>
-        <input class="checkin-form-input" type="text" placeholder="Не указано">
-        <div class="checkin-txt-2">
-          С организационно-правовой формой (ООО, ИП и т.д.)
-
-        </div>
-      </div>
-    </div>
-
-<div class="checkin-form-row checkin-form-row-2">
-      <div class="checkin-form">
-        <div class="checkin-txt-1">ИНН<span>*</span>:</div>
-        <input class="checkin-form-input" type="text" placeholder="Не указано">        
-      </div>
-      <div class="checkin-form">
-        <div class="checkin-txt-1">ОРГН<span>*</span>:</div>
-        <input class="checkin-form-input" type="text" placeholder="Не указано">        
-      </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div class="checkin-btn-w">
-      <button class="checkin-btn butt">Далее</button>
-      <div class="consent-txt">Нажимая кнопку “Далее”, Вы соглашаетесь с<a class="consent-a">правилами нашего сайта</a></div>
-    </div>
-  </form>
-</div><!--column-l-->
-</div><!--columns-->
-</div><!--cont-->
+        </form>
+      </div><!--column-l-->
+    </div><!--columns-->
+  </div><!--cont-->
 </div><!--page-->
 
     <div class="foot">

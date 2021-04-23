@@ -48,7 +48,7 @@ $('.mnav-w .tabs_control_link').click(function (e) {
 
 /**********/
 
-/*$('.wrapper').prepend('<span class="eye-3"></span>');
+$('.wrapper').prepend('<span class="eye-3"></span>');
 let pg = parseInt(document.location.pathname.match(/\d+/))
 $('body').addClass('active').css('background-image', "url('../img/"+pg+".jpg')");
 $('body:not(.active)').css('background-image', "unset");
@@ -60,7 +60,7 @@ $('.eye-3').click(function (e) {
   $('body.active').css('background-image', "url('../img/"+pg+".jpg')");
   $('body:not(.active)').css('background-image', "unset");
 
-});*/
+});
 
 /**********/
 
@@ -217,11 +217,15 @@ if ($('.reg-form').length) {
 
   regForm.addEventListener('input', function () {
 
-    if( checkinFormInputShort.value  != '') {
-      headWievTit.textContent = checkinFormInputShort.value + ' — ' + checkinFormInputDeal.value;
-    }
-    else {
-      headWievTit.textContent = checkinFormInputName.value + ' — ' + checkinFormInputDeal.value;
+
+    if ($('.checkin-form-input-short').length) {
+      if( checkinFormInputShort.value  != '') {
+        headWievTit.textContent = checkinFormInputShort.value + ' — ' + checkinFormInputDeal.value;
+      }
+      else {
+        headWievTit.textContent = checkinFormInputName.value + ' — ' + checkinFormInputDeal.value;
+      }
+
     }
 
     let counSels = document.querySelectorAll(".filter-reg-values input[type='checkbox']:checked").length;
@@ -242,6 +246,24 @@ if ($('.reg-form').length) {
   });
 
 }
+
+
+$('.tabs_control_link').click(function (e) {
+  e.preventDefault();
+
+  var item = $(this).closest('.tabs_control_item'),
+  contentItem = $('.tabs_content_item'),
+  itemPosition = item.index();
+
+  contentItem.eq(itemPosition)
+  .add(item)
+  .addClass('active')
+  .siblings()
+  .removeClass('active');
+
+});
+
+
 
 if ($(".filter-reg-values").length) {
 
@@ -524,6 +546,110 @@ function charsRemove() {
 }
 
 charsRemove();
+
+
+
+
+
+
+const labels = [
+'0',
+'10',
+'20',
+'30',
+'40',
+'50',
+'60',
+'70',
+'80',
+'90',
+'100'
+];
+
+const data = {
+  labels: labels,
+
+  datasets: [
+  {
+    label: 'Просмотр страницы',
+    backgroundColor: '#EBF0FF',
+    borderColor: '#EBF0FF',
+    data: [0, 2.5, 5, 5.5, 6, 7, 8, 6, 5.5, 5, 4 ],
+  },
+  {
+    label: 'Просмотр контактов',
+    backgroundColor: '#C1D0FF',
+    borderColor: '#C1D0FF',
+    data: [0, 1.5, 3, 3.5, 4.5, 5, 6.5, 8, 8.2, 8.7, 9 ],
+  },
+  {
+    label: 'Обращения с сайта',
+    backgroundColor: '#819FFF',
+    borderColor: '#819FFF',
+    data: [0, 1, 2, 3, 3, 4, 4, 4, 4, 4, 5 ],
+  },
+  {
+    label: 'Переходы на сайт',
+    backgroundColor: '#2E60FF',
+    borderColor: '#2E60FF',
+    data: [0, 1.5, 1, 3, 4, 6, 7, 8, 9, 10, 10 ],
+  },
+  ]
+};
+
+
+
+
+
+
+
+
+if ( $('#myChart').length ) {
+
+
+  let ctx = document.getElementById('myChart');
+
+
+  let myChart = new Chart(ctx, {
+    type: 'line',
+    data,    
+    options: {
+
+
+    },
+    
+  });
+}//if
+
+
+
+
+  
+  $('.accordion-header').toggleClass('inactive-header');
+  
+  
+  var contentwidth = $('.accordion-header').width();
+  $('.accordion-content').css({'width' : contentwidth });
+  
+  
+  $('.accordion-header').first().toggleClass('active-header').toggleClass('inactive-header');
+  $('.accordion-content').first().slideDown().toggleClass('open-content');
+  
+  
+  $('.accordion-header').click(function () {
+    if($(this).is('.inactive-header')) {
+      $('.active-header').toggleClass('active-header').toggleClass('inactive-header').next().slideToggle().toggleClass('open-content');
+      $(this).toggleClass('active-header').toggleClass('inactive-header');
+      $(this).next().slideToggle().toggleClass('open-content');
+    }
+    
+    else {
+      $(this).toggleClass('active-header').toggleClass('inactive-header');
+      $(this).next().slideToggle().toggleClass('open-content');
+    }
+  });
+  
+  return false;
 
 
 

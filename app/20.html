@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Настройки профиля</title>  
+  <link rel="stylesheet" href="css/select2.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+  <div class="wrapper">    
+    @@include('var/_top-s.html')
+    <div class="reg1-page profile-page">
+      <div class="contain">
+        <div class="bread">          
+          <div class="bread-w">
+            <ul class="bread-ul">
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">Производители</a></li>
+              <li><a href="#">Авто</a></li>
+              <li><span>Автотовары</span></li>
+            </ul>
+          </div>          
+        </div><!--bread-->        
+        <div class="columns reg1-columns profile-columns">
+          <div class="column-r">
+            <div class="throw-mon">
+              <div class="throw-mon-txt-1">Баланс: 0 рублей</div>
+              <button class="throw-mon-btn butt">Пополнить счет</button>
+              <a href="#" class="throw-mon-a">Движение средств</a>
+            </div>
+            <ul class="pers-area-ul">
+              <li><a href="#">Дашборд</a></li>
+              <li><a href="#">Моя компания</a></li>
+              <li><a href="#">Моя продукция</a></li>
+              <li><a href="#">Лента закупок</a></li>
+              <li><a href="#">Заказы и сообщения</a></li>
+              <li><a href="#">Техническая поддержка</a></li>
+              <li><a href="#">Отзывы</a></li>
+              <li><a href="#">Статистика</a></li>
+              <li><a href="#">Настройки профиля</a></li>
+            </ul>
+          </div>
+          <div class="column-l">
+
+            <form class="reg-form">
+
+
+              <div class="checkin-contacts-row">
+
+                <div class="checkin-form-txt">Настройки профиля</div>
+                
+
+                <div class="checkin-form-row checkin-form-row-2 checkin-form-name">
+                  <div class="checkin-form">
+                    <div class="checkin-txt-1">Имя:</div>
+                    <input class="checkin-form-input" type="text" placeholder="Андрей">
+
+                  </div>
+                  <div class="checkin-form">
+                    <div class="checkin-txt-1">Фамилия:</div>
+                    <input class="checkin-form-input" type="text" placeholder="Егорин">
+
+                  </div>
+                </div><!--checkin-form-row-->
+
+                <div class="checkin-form-row checkin-form-row-2 checkin-form-phone">
+                  <div class="checkin-form">
+                    <div class="checkin-txt-1">Телефон:</div>
+                    <input class="checkin-form-input" type="text" placeholder="Не указано">
+                    <div class="checkin-txt-2">
+
+                    </div>
+                  </div>
+                  <div class="checkin-form">
+                    <div class="checkin-txt-1">E-mail:</div>
+                    <input class="checkin-form-input" type="text" placeholder="Не указано">
+                    <div class="checkin-txt-2">
+                      Не публикуется
+                    </div>
+                  </div>
+                </div><!--checkin-form-row-->
+
+
+
+                <div class="checkin-form-row checkin-form-row-2 checkin-form-pass">
+                  <div class="checkin-form">
+                    <div class="checkin-txt-1">Пароль:</div>
+                    <input class="checkin-form-input" type="password" placeholder="*******">
+                    <div class="checkin-txt-2">
+                      Из более чем 8 символов, содержащий латинские буквы и цифры
+                    </div>
+                  </div>
+                  <div class="checkin-form">
+                    <div class="checkin-txt-1">Повторите пароль:</div>
+                    <input class="checkin-form-input" type="password" placeholder="*******">
+                    <div class="checkin-txt-2">
+                      Повторите введенный пароль, чтобы не ошибиться                      
+                    </div>
+                  </div>
+                </div><!--checkin-form-row-->
+
+
+              </div><!--checkin-contacts-row-->
+
+
+              <div class="checkin-form-txt">Настройка ленты закупок</div>
+
+
+
+
+              <div class="line-sel-w">
+                <div class="repl-bal-txt-1">Страна:</div>
+                <select class="mnav-sel">                
+                  <option value="2 месяца">Россия</option>                    
+                  <option value="2 месяца">Украина</option>                    
+                </select>
+              </div><!--chart-sel-w-->
+
+
+
+              @@include('var/_filter-reg-w.html')
+
+              <div class="line-checks-w">
+                <label class="manufacturers-label-checked">
+                  <input class="label-checkbox" type="checkbox" checked />
+                  <span class="manufacturers-span-checked"></span>
+                  <span class="manufacturers-label-span-txt">
+                    Важные сообщения от администрации
+                  </span>
+                </label>
+                <label class="manufacturers-label-checked">
+                  <input class="label-checkbox" type="checkbox" />
+                  <span class="manufacturers-span-checked"></span>
+                  <span class="manufacturers-label-span-txt">
+                    Заказы товаров
+                  </span>
+                </label>
+                <label class="manufacturers-label-checked">
+                  <input class="label-checkbox" type="checkbox" />
+                  <span class="manufacturers-span-checked"></span>
+                  <span class="manufacturers-label-span-txt">
+                    Новые отзывы
+                  </span>
+                </label>
+              </div>
+
+              <div class="checkin-form-txt">Бейджик Производитель.рф</div>
+
+
+
+
+
+              <div class="bage-w">
+
+                <ul class="tabs-control">
+                  <li class="tabs_control_item active">
+                    <a href="#" class="tabs_control_link">
+                      <span class="bage-img-w"><img src="img/bage-1.png" alt=""></span>
+                      <span class="bage-radio"></span>
+                    </a>
+                  </li>
+                  <li class="tabs_control_item">
+                    <a href="#" class="tabs_control_link">
+                      <span class="bage-img-w"><img src="img/bage-2.png" alt=""></span>
+                      <span class="bage-radio"></span>          
+                    </a>
+                  </li>
+                  <li class="tabs_control_item">
+                    <a href="#" class="tabs_control_link">
+                      <span class="bage-img-w"><img src="img/bage-3.png" alt=""></span>
+                      <span class="bage-radio"></span>
+                    </a>
+                  </li>
+                  <li class="tabs_control_item">
+                    <a href="#" class="tabs_control_link">
+                      <span class="bage-img-w"><img src="img/bage-4.png" alt=""></span>
+                      <span class="bage-radio"></span>
+                    </a>
+                  </li>
+                </ul>
+
+                <ul class="tabs_content">
+                  <li class="tabs_content_item active">                 
+                    <textarea><a href="https://производители.рф/" target="_blank"><img src="//производители.рф/counters/seostop.ru" width="88" height="31" alt="логотип - Производители.рф"></a></textarea>
+                  </li>                    
+                </li>
+                <li class="tabs_content_item">                          
+                  <textarea><a href="https://производители.рф/" target="_blank"><img src="//производители.рф/counters/seostop.ru/1" width="88" height="31" alt="логотип - Производители.рф"></a></textarea>
+                </li>
+                <li class="tabs_content_item">                            
+                  <textarea><a href="https://производители.рф/" target="_blank"><img src="//производители.рф/counters/seostop.ru/10" width="88" height="31" alt="логотип - Производители.рф"></a></textarea>
+                </li>
+                <li class="tabs_content_item">                            
+                  <textarea><a href="https://производители.рф/" target="_blank"><img src="//производители.рф/counters/seostop.ru/2" width="88" height="31" alt="логотип - Производители.рф"></a></textarea>
+                </li>
+              </ul>
+
+            </div>
+
+
+            <div class="bage-conf-w">
+
+             <label class="manufacturers-label-checked">
+              <input class="label-checkbox" type="checkbox" />
+              <span class="manufacturers-span-checked"></span>
+              <span class="manufacturers-label-span-txt">
+                Я разместил логотип "Производитель.рф" на свой сайт
+              </span>
+            </label>
+
+            <a href="#">Что дает размещение логотипа?</a>
+
+          </div><!--bage-conf-w-->
+
+
+
+          <div class="checkin-btn-w">
+            <button class="bage-btn butt">Сохранить</button>                
+          </div>
+        </form>
+      </div><!--column-l-->
+    </div><!--columns-->
+  </div><!--cont-->
+</div><!--page-->
+
+@@include('var/_footer.html')
+</div><!--wrapper-->
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>
+

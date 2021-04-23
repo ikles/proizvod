@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Статистика</title>  
+  <link rel="stylesheet" href="css/select2.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+  <div class="wrapper">    
+        <div class="top">
+      <div class="contain">
+        <div class="top-w">
+          <a href="index.html" class="logo"><img src="img/logo.svg" /></a>
+          <div class="col-mnu">
+            <div class="hidden-mnu">
+              <a href="#" class="toggle-mnu"><span></span></a>
+            </div>
+            <div class="top-mnu">
+              <ul>
+                <li class="nav-tit">Навигация</li>
+                <li><a href="#">Производители</a></li>
+                <li><a href="#">Продукция</a></li>
+                <li><a href="#">Закупки</a></li>
+                <li><a href="#">Услуги</a></li>
+              </ul>
+              <div class="top-info">
+                <div class="bal">Баланс: 0 рублей</div>
+                <a href="#" class="add-mon butt">Пополнить счет</a>
+                <a href="#" class="moov-mon">Движение средств</a>
+                <ul class="user-cab">
+                  <li class="nav-tit">Дашборд</li>
+                  <li><a href="#">Моя компания</a></li>
+                  <li><a href="#">Моя продукция</a></li>
+                  <li><a href="#">Лента закупок</a></li>
+                  <li><a href="#">Заказы и сообщения</a></li>
+                  <li><a href="#">Техническая поддержка</a></li>
+                  <li><a href="#">Отзывы</a></li>
+                  <li><a href="#">Статистика</a></li>
+                  <li><a href="#">Настройки профиля</a></li>
+                </ul>
+              </div><!--top-info-->
+            </div>
+          </div>
+
+          <form class="top-search-f">
+            <a class="back-s" href="#"></a>
+            <input class="top-search-i" type="text" placeholder="Поиск по сайту">
+          </form>
+
+          <a href="#" class="top-search"></a>
+          <a href="#" class="like like-s">
+            <span class="like-num">
+              <span>12</span>
+            </span>
+          </a>
+          <a href="#" class="enter">Войти</a>
+        </div>
+      </div>
+    </div>
+    <div class="page stat-page">
+      <div class="contain">
+        <div class="bread">          
+          <div class="bread-w">
+            <ul class="bread-ul">
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">Производители</a></li>
+              <li><a href="#">Авто</a></li>
+              <li><span>Автотовары</span></li>
+            </ul>
+          </div>          
+        </div><!--bread-->
+        <div class="columns stat-cols">
+          <div class="column-r">
+            <div class="throw-mon">
+              <div class="throw-mon-txt-1">Баланс: 0 рублей</div>
+              <button class="throw-mon-btn butt">Пополнить счет</button>
+              <a href="#" class="throw-mon-a">Движение средств</a>
+            </div>
+            <ul class="pers-area-ul">
+              <li><a href="#">Дашборд</a></li>
+              <li><a href="#">Моя компания</a></li>
+              <li><a href="#">Моя продукция</a></li>
+              <li><a href="#">Лента закупок</a></li>
+              <li><a href="#">Заказы и сообщения</a></li>
+              <li><a href="#">Техническая поддержка</a></li>
+              <li><a href="#">Отзывы</a></li>
+              <li><a href="#">Статистика</a></li>
+              <li><a href="#">Настройки профиля</a></li>
+            </ul>
+          </div>
+          <div class="column-l">
+
+            <div class="checkin-form-txt-w">
+              <div class="head-1">Статистика</div>
+            </div>
+
+            <div class="chart-sel-w">
+              <select class="mnav-sel">
+                <option value="1 месяц">1 месяц</option>                    
+                <option value="2 месяца">2 месяца</option>                    
+              </select>
+            </div><!--chart-sel-w-->
+            
+
+
+            <div class="chart-w">
+              <canvas id="myChart" width="740px" height="428px"></canvas>
+            </div>
+
+            <div class="chart-checks-w">
+              <label class="manufacturers-label-checked">
+                <input class="label-checkbox" type="checkbox" checked />
+                <span class="manufacturers-span-checked"></span>
+                <span class="manufacturers-label-span-txt">
+                  Просмотр страницы
+                </span>
+              </label>
+
+              <label class="manufacturers-label-checked">
+                <input class="label-checkbox" type="checkbox" />
+                <span class="manufacturers-span-checked"></span>
+                <span class="manufacturers-label-span-txt">
+                  Просмотр контактов
+                </span>
+              </label>
+
+              <label class="manufacturers-label-checked">
+                <input class="label-checkbox" type="checkbox" />
+                <span class="manufacturers-span-checked"></span>
+                <span class="manufacturers-label-span-txt">
+                  Обращения с сайта
+                </span>
+              </label>
+
+              <label class="manufacturers-label-checked">
+                <input class="label-checkbox" type="checkbox" />
+                <span class="manufacturers-span-checked"></span>
+                <span class="manufacturers-label-span-txt">
+                  Переходы на сайт
+                </span>
+              </label>
+            </div><!---->
+
+            <div class="prz-2 prz-w100 prz-tar">
+              <div class="prz-txts">
+                <div class="prz-txt-22">Хотите улучшить показатели?</div>
+                <div class="prz-txt-33">
+                  Рассмотрите платные тарифы!
+                </div>
+                <a href="#" class="prz-txt-butt-w butt-w">Тарифы</a>
+              </div>
+            </div>
+
+            <div class="tar-table-w">
+              <table>
+                <thead>
+                  <tr>
+                    <td></td>
+                    <td>Сегодня</td>
+                    <td>Вчера</td>
+                    <td>Текущий месяц</td>
+                    <td>Прошлый месяц</td>
+                    <td>365 дней</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Посетили вашу страницу</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="more0">1</td>
+                    <td>0</td>
+                    <td class="more0">1</td>
+                  </tr>
+                  <tr>
+                    <td>Открыли ваш телефон</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="more0">1</td>
+                    <td>0</td>
+                    <td class="more0">1</td>
+                  </tr>
+                  <tr>
+                    <td>Перешли на ваш сайт</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="more0">1</td>
+                    <td>0</td>
+                    <td class="more0">1</td>
+                  </tr>
+                  <tr>
+                    <td>Обращения</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="more0">1</td>
+                    <td>0</td>
+                    <td class="more0">1</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div><!--tar-table-w-->
+
+
+          </div><!--column-r-->
+        </div><!--columns-->
+      </div><!--cont-->
+    </div><!--page-->
+
+        <div class="foot">
+      <div class="contain">
+        <div class="foot-w">
+          <div class="foot-row-1">
+            <div class="foot-col-1">
+              <a href="#" class="plogo">B2B каталог для производителей и закупщиков</a>
+              <div class="copy">© «Производитель.рф», 2021</div>
+            </div>
+            <ul class="foot-ul">
+              <li><a href="#">Производители</a></li>
+              <li><a href="#">Продукция</a></li>
+              <li><a href="#">Закупки</a></li>
+              <li><a href="#">Услуги</a></li>
+              <li><a href="#">Публикации</a></li>
+            </ul>
+            <ul class="foot-ul">
+              <li><a href="#">Добавить компанию</a></li>
+              <li><a href="#">Добавить закупку</a></li>
+              <li><a href="#">Добавить услугу</a></li>
+              <li><a href="#">Рубрикатор</a></li>
+              <li><a href="#">Все производители</a></li>
+            </ul>
+            <ul class="foot-ul">
+              <li><a href="#">О сайте</a></li>
+              <li><a href="#">Техническая поддержка</a></li>
+              <li><a href="#">Тарифы</a></li>
+              <li><a href="#">Правила сайта</a></li>
+            </ul>
+            <ul class="foot-ul">
+              <li><span class="foot-mnu-head">Статистика сайта:</span></li>
+              <li><a href="#">Производители: 13343</a></li>
+              <li><a href="#">Продукция: 13343</a></li>
+              <li><a href="#">Запросы: 13343</a></li>
+              <li><a href="#">Услуги: 1000</a></li>
+              <li><a href="#">Пользователи: 1000</a></li>
+            </ul>
+          </div>
+          <div class="foot-row-2">
+            <div class="foot-row-2-txt-1">Пользуясь данным сайтом, вы соглашаетесь с <a href="#">пользовательским соглашением</a> и <a href="#">политикой конфиденциальности</a></div>
+            <div class="foot-row-2-txt-2">Размещенные цены не являются публичной офертой</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="overlay"></div>
+  </div><!--wrapper-->
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/select2.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/chart.min.js"></script>
+  <script src="js/common.js"></script>
+</body>
+</html>
+
