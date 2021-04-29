@@ -2,6 +2,14 @@
   .contain {
     width: 970px;
   }
+
+
+.site-map-cities {  
+  &:after {   
+    width: 970px;   
+  }
+}
+
   .mnav-link {
     line-height: 1.4;
   }
@@ -340,6 +348,13 @@
   .contain {
     width: 750px;
   }
+
+  .site-map-cities {  
+  &:after {   
+    width: 750px;
+  }
+}
+
   .top-w {    
 
   }
@@ -933,6 +948,11 @@
   .contain {
     width: 600px;
   }
+  .site-map-cities {  
+  &:after {   
+    width: 600px;
+  }
+}
   .mdesk-w {
     font-size: 18px;
     margin-bottom: 48px;
@@ -1237,6 +1257,12 @@
   .contain {
     width: 530px;
   }
+
+  .site-map-cities {  
+  &:after {   
+    width: 530px;
+  }
+}
   input[type="text"].msearch-input {
     font-size: 19px;
   }
@@ -1415,6 +1441,14 @@
     padding-left: 15px;
     padding-right: 15px;
   }
+
+
+.site-map-cities {  
+  &:after {   
+    width: calc(100% - 50px);
+  }
+}
+
   .msearch-form .select2-container {
     width: 100% !important;
     margin-bottom: 10px;

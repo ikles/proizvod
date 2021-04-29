@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Тарифы</title>  
+  <link rel="stylesheet" href="css/select2.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+  <div class="wrapper">    
+        <div class="top">
+      <div class="contain">
+        <div class="top-w">
+          <a href="index.html" class="logo"><img src="img/logo.svg" /></a>
+          <div class="col-mnu">
+            <div class="hidden-mnu">
+              <a href="#" class="toggle-mnu"><span></span></a>
+            </div>
+            <div class="top-mnu">
+              <ul>
+                <li class="nav-tit">Навигация</li>
+                <li><a href="#">Производители</a></li>
+                <li><a href="#">Продукция</a></li>
+                <li><a href="#">Закупки</a></li>
+                <li><a href="#">Услуги</a></li>
+              </ul>
+              <div class="top-info">
+                <div class="bal">Баланс: 0 рублей</div>
+                <a href="#" class="add-mon butt">Пополнить счет</a>
+                <a href="#" class="moov-mon">Движение средств</a>
+                <ul class="user-cab">
+                  <li class="nav-tit">Дашборд</li>
+                  <li><a href="#">Моя компания</a></li>
+                  <li><a href="#">Моя продукция</a></li>
+                  <li><a href="#">Лента закупок</a></li>
+                  <li><a href="#">Заказы и сообщения</a></li>
+                  <li><a href="#">Техническая поддержка</a></li>
+                  <li><a href="#">Отзывы</a></li>
+                  <li><a href="#">Статистика</a></li>
+                  <li><a href="#">Настройки профиля</a></li>
+                </ul>
+              </div><!--top-info-->
+            </div>
+          </div>
+
+          <form class="top-search-f">
+            <a class="back-s" href="#"></a>
+            <input class="top-search-i" type="text" placeholder="Поиск по сайту">
+          </form>
+
+          <a href="#" class="top-search"></a>
+          <a href="#" class="like like-s">
+            <span class="like-num">
+              <span>12</span>
+            </span>
+          </a>
+          <a href="#" class="enter">Войти</a>
+        </div>
+      </div>
+    </div>
+    <div class="reg1-page tarifs-page">
+      <div class="contain">
+        <div class="bread">          
+          <div class="bread-w">
+            <ul class="bread-ul">
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">Производители</a></li>
+              <li><a href="#">Авто</a></li>
+              <li><span>Автотовары</span></li>
+            </ul>
+          </div>          
+        </div><!--bread-->        
+        <div class="columns reg1-columns tarifs-cols">
+          <div class="column-r">
+            <div class="checkin-col-1">
+              <ul class="checkin-ul">
+                <li class="checkin-li"><a href="#" class="checkin-a-2 active">Регистрация</a></li>
+                <li class="checkin-li"><a href="#" class="checkin-a-2">Активация профиля</a></li>
+                <li class="checkin-li"><a href="#" class="checkin-a-2">Тарифы</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="column-l">
+            <h1>Тарифы</h1>
+            <p>Для производителей</p>
+
+            <div class="tarif-table-w">
+              <table>
+                <thead>
+                  <tr>        
+                    <td>Тарифы:</td>
+                    <td>Стандарт</td>
+                    <td>Бизнес</td>
+                    <td>Премиум</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>        
+                    <td>
+                      <span class="per">Период оплаты:</span>
+                      <select>
+                        <option value="1">1 месяц</option>
+                        <option value="3">3 месяца</option>
+                        <option value="6">6 месяцев</option>
+                      </select>
+                    </td>
+                    <td><b>0</b> ₽/мес.</td>
+                    <td>
+                      <b>2400</b> ₽/мес. <br>
+                      <div class="old-price"><b>2900</b> ₽/мес.</div>
+                    </td>
+                    <td>
+                      <b>7900</b> ₽/мес. <br>
+                      <div class="old-price"><b>9900</b> ₽/мес.</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Размещение компании</td>
+                    <td><span class="check"></span></td>
+                    <td><span class="check"></span></td>
+                    <td><span class="check"></span></td>
+                  </tr>
+                  <tr>
+                    <td>Размещение товаров</td>
+                    <td><span class="check"></span></td>
+                    <td><span class="check"></span></td>
+                    <td><span class="check"></span></td>
+                  </tr>
+                  <tr>
+                    <td>Ваши контакты открыты</td>
+                    <td><span class="check"></span></td>
+                    <td><span class="check"></span></td>
+                    <td><span class="check"></span></td>
+                  </tr>                  
+                  <tr>
+                    <td>Позиция компании в каталоге</td>
+                    <td><span class="down"></span></td>
+                    <td><span class="up"></span></td>
+                    <td>
+                      <span class="up"></span>
+                      <span class="up"></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Контакты закупщиков в месяц</td>
+                    <td>5</td>
+                    <td>20</td>
+                    <td>50</td>
+                  </tr>
+                  <tr>
+                    <td>Отключение сторонней рекламы <br> на странице</td>
+                    <td><span class="drop"></span></td>
+                    <td><span class="check"></span></td>
+                    <td><span class="check"></span></td>
+                  </tr>
+                  <tr>
+                    <td>Реклама на странице конкурентов</td>
+                    <td><span class="drop"></span></td>
+                    <td><span class="drop"></span></td>
+                    <td><span class="check"></span></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td> <a href="#" class="butt get-plan-btn">Выбрать</a> </td>
+                    <td> <a href="#" class="butt get-plan-btn">Выбрать</a> </td>                    
+                  </tr>
+                </tbody>
+              </table>
+            </div><!--tarif-table-w-->
+
+
+            <div class="oneservs">
+              <div class="tar-head-2">
+                <div class="head-2">Разовые услуги</div>
+                <p>Для производителей</p>
+              </div><!--tar-head-2-->
+
+              <table>
+                <tbody>
+                  <tr>
+                    <td>Верификация</td>
+                    <td><b>2900</b> ₽</td>
+                    <td>Проверяются учредительные документы компании и появляется галочка</td>
+                  </tr>
+                  <tr>
+                    <td>SEO-оптимизация страницы</td>
+                    <td><b>1100</b> ₽/стр</td>
+                    <td>Можно оптимизировать как страницу компании, так и товары</td>
+                  </tr>
+                  <tr>
+                    <td>Импорт товаров CSV</td>
+                    <td><b>3000</b> ₽</td>
+                    <td>Необходимо предоставить данные в экселе с требуемыми параметрами</td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div><!--oneservs-->
+
+            
+            <div class="rate">
+              <div class="tar-head-2">
+                <div class="head-2">Приоритетное размещение</div>
+                <p>Для закупщиков и поставщиков услуг</p>
+              </div><!--tar-head-2-->
+              <div class="rate-row">
+                <div class="rate-l">
+                  <select>
+                    <option value="1 месяц">1 месяц</option>
+                    <option value="3 месяца">3 месяца</option>
+                    <option value="6 месяцев">6 месяцев</option>                    
+                  </select>
+                  <div class="rate-l-txt">Стоимость:</div>
+                </div>
+                <div class="rate-r">                  
+                  <b>2900</b> ₽/мес.
+                </div>
+              </div>
+
+              <div class="rate-txt-3">При приоритетном размещении нескольких компаний в рамках одной категории выше размещается компания, размещенная в приоритетном показе ранее.</div>
+
+              <p>Текстовый блок. <br>Поднятие позволяет закрепить анкету вашей компании вверху списка компаний в каталоге. Данный вид рекламы дает наибольшую отдачу в короткие сроки.</p>
+            </div>
+
+
+
+          </div><!--col-->
+        </div><!--columns-->
+
+
+
+
+
+
+
+
+
+      </div><!--cont-->
+    </div><!--page-->
+
+        <div class="foot">
+      <div class="contain">
+        <div class="foot-w">
+          <div class="foot-row-1">
+            <div class="foot-col-1">
+              <a href="#" class="plogo">B2B каталог для производителей и закупщиков</a>
+              <div class="copy">© «Производитель.рф», 2021</div>
+            </div>
+            <ul class="foot-ul">
+              <li><a href="#">Производители</a></li>
+              <li><a href="#">Продукция</a></li>
+              <li><a href="#">Закупки</a></li>
+              <li><a href="#">Услуги</a></li>
+              <li><a href="#">Публикации</a></li>
+            </ul>
+            <ul class="foot-ul">
+              <li><a href="#">Добавить компанию</a></li>
+              <li><a href="#">Добавить закупку</a></li>
+              <li><a href="#">Добавить услугу</a></li>
+              <li><a href="#">Рубрикатор</a></li>
+              <li><a href="#">Все производители</a></li>
+            </ul>
+            <ul class="foot-ul">
+              <li><a href="#">О сайте</a></li>
+              <li><a href="#">Техническая поддержка</a></li>
+              <li><a href="#">Тарифы</a></li>
+              <li><a href="#">Правила сайта</a></li>
+            </ul>
+            <ul class="foot-ul">
+              <li><span class="foot-mnu-head">Статистика сайта:</span></li>
+              <li><a href="#">Производители: 13343</a></li>
+              <li><a href="#">Продукция: 13343</a></li>
+              <li><a href="#">Запросы: 13343</a></li>
+              <li><a href="#">Услуги: 1000</a></li>
+              <li><a href="#">Пользователи: 1000</a></li>
+            </ul>
+          </div>
+          <div class="foot-row-2">
+            <div class="foot-row-2-txt-1">Пользуясь данным сайтом, вы соглашаетесь с <a href="#">пользовательским соглашением</a> и <a href="#">политикой конфиденциальности</a></div>
+            <div class="foot-row-2-txt-2">Размещенные цены не являются публичной офертой</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="overlay"></div>
+  </div><!--wrapper-->
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/select2.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/common.js"></script>
+</body>
+</html>
+
