@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Тарифы</title>  
   <link rel="stylesheet" href="css/select2.min.css">
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
   <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/main.css">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -17,6 +18,9 @@
 <![endif]-->
 </head>
 <body>
+
+  
+
   <div class="wrapper">    
     @@include('var/_top-s.html')
     <div class="reg1-page tarifs-page">
@@ -45,91 +49,92 @@
             <h1>Тарифы</h1>
             <p>Для производителей</p>
 
-            <div class="tarif-table-w">
-              <table>
-                <thead>
-                  <tr>        
-                    <td>Тарифы:</td>
-                    <td>Стандарт</td>
-                    <td>Бизнес</td>
-                    <td>Премиум</td>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>        
-                    <td>
-                      <span class="per">Период оплаты:</span>
-                      <select>
-                        <option value="1">1 месяц</option>
-                        <option value="3">3 месяца</option>
-                        <option value="6">6 месяцев</option>
-                      </select>
-                    </td>
-                    <td><b>0</b> ₽/мес.</td>
-                    <td>
-                      <b>2400</b> ₽/мес. <br>
-                      <div class="old-price"><b>2900</b> ₽/мес.</div>
-                    </td>
-                    <td>
-                      <b>7900</b> ₽/мес. <br>
-                      <div class="old-price"><b>9900</b> ₽/мес.</div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Размещение компании</td>
-                    <td><span class="check"></span></td>
-                    <td><span class="check"></span></td>
-                    <td><span class="check"></span></td>
-                  </tr>
-                  <tr>
-                    <td>Размещение товаров</td>
-                    <td><span class="check"></span></td>
-                    <td><span class="check"></span></td>
-                    <td><span class="check"></span></td>
-                  </tr>
-                  <tr>
-                    <td>Ваши контакты открыты</td>
-                    <td><span class="check"></span></td>
-                    <td><span class="check"></span></td>
-                    <td><span class="check"></span></td>
-                  </tr>                  
-                  <tr>
-                    <td>Позиция компании в каталоге</td>
-                    <td><span class="down"></span></td>
-                    <td><span class="up"></span></td>
-                    <td>
-                      <span class="up"></span>
-                      <span class="up"></span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Контакты закупщиков в месяц</td>
-                    <td>5</td>
-                    <td>20</td>
-                    <td>50</td>
-                  </tr>
-                  <tr>
-                    <td>Отключение сторонней рекламы <br> на странице</td>
-                    <td><span class="drop"></span></td>
-                    <td><span class="check"></span></td>
-                    <td><span class="check"></span></td>
-                  </tr>
-                  <tr>
-                    <td>Реклама на странице конкурентов</td>
-                    <td><span class="drop"></span></td>
-                    <td><span class="drop"></span></td>
-                    <td><span class="check"></span></td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                    <td></td>
-                    <td> <a href="#" class="butt get-plan-btn">Выбрать</a> </td>
-                    <td> <a href="#" class="butt get-plan-btn">Выбрать</a> </td>                    
-                  </tr>
-                </tbody>
-              </table>
-            </div><!--tarif-table-w-->
-
+            <div class="tarif-table-scr">
+              <div class="tarif-table-w">
+                <table>
+                  <thead>
+                    <tr>        
+                      <td>Тарифы:</td>
+                      <td>Стандарт</td>
+                      <td>Бизнес</td>
+                      <td>Премиум</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>        
+                      <td>
+                        <span class="per">Период оплаты:</span>
+                        <select class="tarif-select">
+                          <option value="1">1 месяц</option>
+                          <option value="3">3 месяца</option>
+                          <option value="6">6 месяцев</option>
+                        </select>
+                      </td>
+                      <td><b>0</b> ₽/мес.</td>
+                      <td>
+                        <div class="new-price new-price-biz"><b>2400</b> ₽/мес. <br></div>
+                        <div class="old-price"><b>2900</b> ₽/мес.</div>
+                      </td>
+                      <td>
+                        <div class="new-price new-price-prem"><b>7900</b> ₽/мес. <br></div>
+                        <div class="old-price"><b>9900</b> ₽/мес.</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Размещение компании</td>
+                      <td><span class="check"></span></td>
+                      <td><span class="check"></span></td>
+                      <td><span class="check"></span></td>
+                    </tr>
+                    <tr>
+                      <td>Размещение товаров</td>
+                      <td><span class="check"></span></td>
+                      <td><span class="check"></span></td>
+                      <td><span class="check"></span></td>
+                    </tr>
+                    <tr>
+                      <td>Ваши контакты открыты</td>
+                      <td><span class="check"></span></td>
+                      <td><span class="check"></span></td>
+                      <td><span class="check"></span></td>
+                    </tr>                  
+                    <tr>
+                      <td>Позиция компании в каталоге</td>
+                      <td><span class="down"></span></td>
+                      <td><span class="up"></span></td>
+                      <td>
+                        <span class="up"></span>
+                        <span class="up"></span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Контакты закупщиков в месяц</td>
+                      <td>5</td>
+                      <td>20</td>
+                      <td>50</td>
+                    </tr>
+                    <tr>
+                      <td>Отключение сторонней рекламы <br> на странице</td>
+                      <td><span class="drop"></span></td>
+                      <td><span class="check"></span></td>
+                      <td><span class="check"></span></td>
+                    </tr>
+                    <tr>
+                      <td>Реклама на странице конкурентов</td>
+                      <td><span class="drop"></span></td>
+                      <td><span class="drop"></span></td>
+                      <td><span class="check"></span></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td> <a href="#" class="butt get-plan-btn">Выбрать</a> </td>
+                      <td> <a href="#" class="butt get-plan-btn">Выбрать</a> </td>                    
+                    </tr>
+                  </tbody>
+                </table>
+              </div><!--tarif-table-w-->
+            </div><!--tarif-table-scr-->
 
             <div class="oneservs">
               <div class="tar-head-2">
@@ -167,14 +172,15 @@
               </div><!--tar-head-2-->
               <div class="rate-row">
                 <div class="rate-l">
-                  <select>
-                    <option value="1 месяц">1 месяц</option>
-                    <option value="3 месяца">3 месяца</option>
-                    <option value="6 месяцев">6 месяцев</option>                    
+                  <select class="rate-sel">
+                    <option value="1">1 месяц</option>
+                    <option value="3">3 месяца</option>
+                    <option value="6">6 месяцев</option>                    
                   </select>
-                  <div class="rate-l-txt">Стоимость:</div>
+                  <div class="rate-l-txt hide-570">Стоимость:</div>
                 </div>
                 <div class="rate-r">                  
+                  <div class="show-570">Стоимость:</div>
                   <b>2900</b> ₽/мес.
                 </div>
               </div>
@@ -205,6 +211,7 @@
 
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/select2.min.js"></script>
+  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/common.js"></script>
 </body>

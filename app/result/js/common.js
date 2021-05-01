@@ -48,7 +48,7 @@ $('.mnav-w .tabs_control_link').click(function (e) {
 
 /**********/
 
-$('.wrapper').prepend('<span class="eye-3"></span>');
+/*$('.wrapper').prepend('<span class="eye-3"></span>');
 let pg = parseInt(document.location.pathname.match(/\d+/))
 $('body').addClass('active').css('background-image', "url('../img/"+pg+".jpg')");
 $('body:not(.active)').css('background-image', "unset");
@@ -60,7 +60,7 @@ $('.eye-3').click(function (e) {
   $('body.active').css('background-image', "url('../img/"+pg+".jpg')");
   $('body:not(.active)').css('background-image', "unset");
 
-});
+});*/
 
 /**********/
 
@@ -69,16 +69,61 @@ $('select').select2({
   minimumResultsForSearch: -1
 });
 
-$('.mnav-sel').on('select2:select', function (e) {
+
+
+$('.mnav-sel-1').on('select2:select', function (e) {
   if ( e.params.data.id == 'По рубрикам' ) {
-    $('.mnav-links-w').removeClass('active');
-    $('.mnav-links-w-1').addClass('active');
+    $('.tabs_content_item-1 .mnav-links-w').removeClass('active');
+    $('.tabs_content_item-1 .mnav-links-w-1').addClass('active');
   }
   else if (e.params.data.id == 'По алфавиту') {
-    $('.mnav-links-w').removeClass('active');
-    $('.mnav-links-w-2').addClass('active');
+    $('.tabs_content_item-1 .mnav-links-w').removeClass('active');
+    $('.tabs_content_item-1 .mnav-links-w-2').addClass('active');
   }
 });
+
+
+$('.mnav-sel-2').on('select2:select', function (e) {
+  if ( e.params.data.id == 'По рубрикам' ) {
+    $('.tabs_content_item-2 .mnav-links-w').removeClass('active');
+    $('.tabs_content_item-2 .mnav-links-w-2').addClass('active');
+  }
+  else if (e.params.data.id == 'По алфавиту') {
+    $('.tabs_content_item-2 .mnav-links-w').removeClass('active');
+    $('.tabs_content_item-2 .mnav-links-w-1').addClass('active');
+  }
+});
+
+
+$('.tarif-select').on('select2:select', function (e) {
+  if ( e.params.data.id == '1' ) {
+    $('.new-price-biz b').html('2400');
+    $('.new-price-prem b').html('7900');
+  }
+  else if (e.params.data.id == '3') {
+    $('.new-price-biz b').html('1900');
+    $('.new-price-prem b').html('5900'); 
+  }
+  else if (e.params.data.id == '6') {
+    $('.new-price-biz b').html('1000');
+    $('.new-price-prem b').html('4900'); 
+  }
+});
+
+
+$('.rate-sel').on('select2:select', function (e) {
+  if ( e.params.data.id == '1' ) {
+    $('.rate-r b').html('2900');
+  }
+  else if (e.params.data.id == '3') {
+   $('.rate-r b').html('2400'); 
+ }
+ else if (e.params.data.id == '6') {
+   $('.rate-r b').html('1000');  
+ }
+});
+
+
 
 $('.comp-more').click(function (e) {
   e.preventDefault();
@@ -275,6 +320,17 @@ if ($(".filter-reg-values").length) {
   });
 }
 
+if ($(".tarif-table-scr").length) {
+
+  $(".tarif-table-scr").mCustomScrollbar({
+    axis: "x",
+    theme: "dark-3",
+    mouseWheel: 0,
+    scrollInertia: '230'
+  });
+}
+
+
 
 if ($(".equip-ul.more").length) {
 
@@ -284,7 +340,31 @@ if ($(".equip-ul.more").length) {
     mouseWheel: 1,
     scrollInertia: '930'
   });
-}
+
+  $(window).resize(function() {
+    if( $(window).width() > 480 ) {
+      $(".equip-ul.more").mCustomScrollbar({
+        axis: "y",
+        theme: "dark-3",
+        mouseWheel: 1,
+        scrollInertia: '930'
+      });
+    }
+  });
+
+  if( $(window).width() < 481 ) {
+    $(".equip-ul.more").mCustomScrollbar("destroy");
+  }
+
+  $(window).resize(function() {
+    if( $(window).width() < 481 ) {
+      $(".equip-ul.more").mCustomScrollbar("destroy");
+    }
+  });
+
+}//if
+
+
 
 
 /*if ($(".mess-table-w").length) {
@@ -625,7 +705,7 @@ if ( $('#myChart').length ) {
     type: 'line',
     data,    
     options: {
-responsive: true
+      responsive: true
 
     },
     
